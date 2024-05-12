@@ -1,2 +1,2 @@
 # MSc-Data-Science
-This is my progression for my MSc Data Science course
+This is progression for my MSc Data Science course
