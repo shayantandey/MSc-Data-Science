@@ -5,6 +5,7 @@ output: html_notebook
 
 ```{r}
 library(ggplot2)
+library(dplyr)
 ```
 
 ```{r}
@@ -82,20 +83,22 @@ ggplot(data = mpgData) +
 ```{r}
 # A quick exercise on facet plotting with filtering of samples
 # Investigate the number of levels in the cyl feature
-factor()
-
-# How many cars of each cyl type are there?
-mpgData %>% 
+  factor(mpgData$cyl)
+# # 
+# # # How many cars of each cyl type are there?
+  mpgData %>% count(cyl)
 
 # Filter samples with 3 and 5 cylinder cars (which are very rare)
-# mpgData = mpgData %>% filter(!(? %in% c(?, ?)))
+mpgData = mpgData %>% filter(!(cyl %in% c(5)))
+
+#mpgData = mpgData %>% filter(!(? %in% c(?, ?)))
 # 
-# head(mpgData, 5)
+head(mpgData, 5)
 # 
 # # Map the color aesthetic to the cyl variable
-# p5 = ggplot(data = mpgData) +
-#   geom_point(mapping = aes(x = displ, y = hwy))
-# p5
+p5 = ggplot(data = mpgData) +
+   geom_point(mapping = aes(x = displ, y = hwy, color = factor(cyl), shape = class))
+ p5
 ```
 
 
