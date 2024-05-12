@@ -1,0 +1,46 @@
+---
+title: "Importing Data in R and In-built Functions – Tutorial"
+output: html_notebook
+---
+
+
+Reading data from a file
+
+```{r}
+#file = 'http://openmv.net/file/food-texture.csv'
+file = 'Data Files/mtcars1.csv'
+carData = read.csv(file, header = TRUE, row.names = 1, stringsAsFactors = FALSE) 
+
+```
+
+In-built functions on the data frame that has been read
+
+```{r}
+# Get dimension
+dim(carData)
+
+# Get number of rows and columns
+nrow(carData)
+ncol(carData)
+
+# Structure of the data frame
+str(carData)
+
+# In-built functions that can applied to columns of a data frame
+mean(carData$mpg)
+mean(carData$cyl)
+
+mean(carData[['mpg']])
+mean(carData[['cyl']])
+
+apply(carData, 2, mean) # Calculate mean column-by-column. 2 specifies the column by column instruction
+apply(carData[c('disp', 'hp')], 2 , mean)
+
+```
+
+```{r}
+#file = 'http://openmv.net/file/food-texture.csv'
+file = '/Users/shayantandey/Documents/Studies/MSc Data Science/Semester 1/R/Segment 1 (Introduction to R)/Data Files/mtcars2.csv'
+car2Data = read.csv(file, header = TRUE, row.names = 1, stringsAsFactors = FALSE)
+
+```

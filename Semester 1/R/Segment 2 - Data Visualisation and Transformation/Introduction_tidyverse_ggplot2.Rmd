@@ -1,0 +1,108 @@
+---
+title: "Introduction to the tidyverse and ggplot2 libraries"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+```{r}
+library(tidyverse)
+```
+#### Check the datasets available in R
+
+```{r}
+data() # lists all the availale datasets
+?mtcars # Details of the mtcars dataset
+```
+
+
+```{r}
+# Load the Motor Trend Car Road Tests (mtcars) dataset
+carData = read.csv('mtcars.csv')
+#carData = mtcars
+
+# Print the first five rows (or samples) in the data frame
+head(carData, 5)
+
+# Print the structure of the data frame 
+str(carData)
+
+# Print the names of the columns (features or variables)
+colnames(carData)
+
+# Print the number of samples (rows) and features (columns) in the data frame
+nrow(carData)
+ncol(carData)
+```
+
+```{r}
+# Basic data management using the tidyverse package
+
+# mutate() function is used to add new columns (features or variables) or modify current ones
+# Add a new column called cyltype
+carData %>% mutate(cyltype = 'High')
+carData %>% mutate(cyltype = ifelse(cyl >6, 'High', 'Low'))
+
+# Add a new column called wtton
+carData %>% mutate(wtton = 0.45*wt)
+
+# Create a new data frame with the cyltype and wtton added
+carData.new = carData %>% mutate(cyltype = ifelse(cyl >6, 'High', 'Low'), wtton = 0.45*wt)
+str(carData.new)
+head(carData.new, 5)
+
+# summarize() function collapses all rows (samples) and returns a summary
+# Return the mean weight (in tons) of the cars
+carData.new %>% summarise(mean(wtton))
+
+# Return the mean weight (in tons) and mean displacement of the cars
+carData.new %>% summarise(mean(wtton), mean(disp))
+
+# group_by() function is used to group samples according to features
+# Group cars according to cyltype and calculate mean weight and mean displacement
+carData.new %>% group_by(cyltype) %>%
+  summarise(mean(wtton), mean(disp))
+
+# filter() function is used to retain samples satisfying a specific condition
+# Filter cars that weight more than 2 tons
+carData.new %>% filter (wtton > 2)
+
+# Filter cars that weight more than 2 tons and have more than 4 cylinders
+carData.new %>% filter (wtton > 2 & cyl > 4)
+
+# select() function is used to retain specific features
+# Select only the feature wtton
+carData.new %>% select(wtton)
+
+# Select everything except the feature wtton
+carData.new %>% select(-wtton)
+
+# Select only the features cyltype and wtton
+carData.new %>% select(cyltype, wtton)
+
+# Select everything except the features cyltype and wtton
+carData.new %>% select(-cyltype, -wtton)
+
+```
+
+```{r}
+# Initiate the ggplot() function binding to the data frame
+ggplot(data = carData)
+#ggplot(data = carData.new)
+
+# Create a plot object
+carplot = ggplot(data = carData)
+
+# Use the aes() function to specify the aesthetic mapping, that is, which variables should be plotted
+carplot = ggplot(data = carData, aes(x = wt, y = disp))
+
+# Use the geom_ type functions to add geometric elements
+carplot = ggplot(data = carData, aes(x = wt, y = disp)) +
+  geom_point()
+
+# Add labels and title
+carplot = carplot + labs(x = 'Weight (lbs)', y = 'Displacement (cu. in.)', title = 'Weight vs. Displacement')
+carplot
+
+```
+

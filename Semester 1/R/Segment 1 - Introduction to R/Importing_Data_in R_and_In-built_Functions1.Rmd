@@ -1,0 +1,42 @@
+---
+title: "Importing Data in R and In-built Functions – Tutorial"
+output: html_notebook
+---
+
+
+Reading data from a file
+
+```{r}
+#file = 'http://openmv.net/file/food-texture.csv'
+file = 'Data Files/food-texture.csv'
+foodData = read.csv(file, header = TRUE, row.names = 1, stringsAsFactors = FALSE) 
+```
+
+In-built functions on the data frame that has been read
+
+```{r}
+# Get dimension
+dim(foodData)
+
+# Get number of rows and columns
+nrow(foodData)
+ncol(foodData)
+
+# Structure of the data frame
+str(foodData)
+
+# In-built functions that can applied to columns of a data frame
+mean(foodData$Density)
+mean(foodData$Crispy)
+mean(foodData$Fracture)
+mean(foodData$Hardness)
+
+mean(foodData[['Density']])
+mean(foodData[['Crispy']])
+mean(foodData[['Fracture']])
+mean(foodData[['Hardness']])
+
+apply(foodData, 2, mean) # Calculate mean column-by-column. 2 specifies the column by column instruction
+apply(foodData[c('Oil', 'Density')], 2 , mean)
+```
+

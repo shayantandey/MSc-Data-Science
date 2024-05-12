@@ -1,0 +1,158 @@
+---
+title: "The dplyr Library for Data Manipulation Part-1"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+# Load the Motor Trend Car Road Tests (mtcars) dataset
+carData = read.csv('mtcars.csv')
+#carData = data('mtcars')
+
+# Print the first five rows (or samples) in the data frame
+head(carData, 5)
+
+# Print the structure of the data frame 
+str(carData)
+
+# Print the names of the columns (features or variables)
+colnames(carData)
+
+# Print the number of samples (rows) and features (columns) in the data frame
+nrow(carData)
+ncol(carData)
+```
+
+```{r}
+# Create a vector of categorical columns
+categorical_cols = c('vs', 'am')
+
+# Convert the columns to factor type
+carData[categorical_cols] = lapply(carData[categorical_cols], as.factor)
+
+# Print the structure of the resulting dataframe
+str(carData)
+```
+
+```{r}
+# Select only the feature wt
+select()
+```
+
+```{r}
+# Select everything except the feature wt
+select()
+```
+
+```{r}
+# Select only the features cyl and wt
+select()
+```
+
+```{r}
+# Select everything except the features cyl and wt
+select()
+```
+
+```{r}
+# Filter cars with V-shaped engine 
+filter()
+```
+
+```{r}
+# Filter cars with V-shaped engine and manual transmission
+filter()
+```
+
+```{r}
+# Filter cars with V-shaped engine and manual transmission
+# and hp greater than 150 or less than 100
+filter(carData, )
+```
+
+```{r}
+# Select only the feature cyl and wt for cars with v-shaped engine
+carData %>%  
+```
+
+```{r}
+# Select only the feature cyl and wt for cars with v-shaped engine
+# and hp greater than 150
+carData %>%  
+```
+
+```{r}
+# Create a new column called wtton
+mutate()
+```
+
+```{r}
+# Create a new column called wtton by ensuring
+# cars with NA weight values are negelected
+carData %>% 
+```
+
+```{r}
+# Check if wtton is a new column in the dataframe
+
+```
+
+```{r}
+# Add a new column called cyltype with value High
+# is cyl is greater than 4 and Low otherwise
+carData %>% mutate(cyltype = ifelse(cyl >4, 'High', 'Low'))
+```
+
+```{r}
+# Create a new data frame with the cyltype and wtton added
+carData.new = carData %>% mutate(cyltype = ifelse(cyl >6, 'High', 'Low'), wtton = 0.45*wt)
+head(carData.new, 5)
+```
+
+```{r}
+# Return the mean weight (in tons) of the cars
+carData.new %>% 
+```
+```{r}
+# Return the mean weight (in tons) and mean displacement
+# of the cars
+carData.new %>% 
+```
+
+```{r}
+# Group cars according to cyltype and calculate mean weight and
+# mean displacement
+carData.new %>% 
+```
+
+```{r}
+# Group cars according to cyltype and calculate mean weight and
+# minimum displacement
+carData.new %>%
+```
+
+```{r}
+# Group cars according to cyltype and calculate mean weight and
+# minimum displacement followed by arranging in increasing order
+# of mean weight
+carData.new %>% 
+```
+
+```{r}
+# Return number of samples for each cyltype
+carData.new %>% 
+```
+
+```{r}
+# Return number of samples for each cyltype and vs
+carData.new %>% 
+```
+
+```{r}
+# Return number of samples for each cyltype and sort by
+# increasing order of count
+carData.new %>% 
+```

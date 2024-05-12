@@ -1,0 +1,34 @@
+---
+title: "Webinar1"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+editor_options:
+  chunk_output_type: console
+---
+
+#### Execute the following cell to load the tidyverse library:
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+#### Load a dataset
+
+```{r}
+FILE = 'Data Files/food-texture.csv'
+foodData = read.csv(FILE, header = TRUE, row.names = 1)
+head(foodData, 5)
+
+```
+
+#### Added a new chunk using "Option + Command + I"
+
+```{r}
+FILE = 'Data Files/food-texture.csv'
+foodData1 = read.csv(FILE, header = TRUE, row.names = 1)
+```
+
+

@@ -1,0 +1,143 @@
+---
+title: "Exploratory Data Analysis Using R"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+# Load the Motor Trend Car Road Tests (mtcars) dataset
+carData = read.csv('mtcars.csv')
+```
+```{r}
+# Create a vector of categorical columns
+categorical_cols = c('vs', 'am')
+
+# Convert the columns to factor type
+carData[categorical_cols] = lapply(carData[categorical_cols], as.factor)
+```
+
+```{r}
+# Add a new column called cyltype with value High
+# is cyl is greater than 4 and Low otherwise
+carData = carData %>% mutate(cyltype = ifelse(cyl > 4, 'High', 'Low'))
+head(carData)
+```
+
+```{r}
+# Summarize the features
+summary(carData)
+```
+
+```{r}
+# Visualize distribution of a categorical
+# variable using bar chart
+ggplot(data = carData) +
+  geom_bar(aes(x = cyltype))
+```
+
+```{r}
+# Count the number of observations in each category
+carData %>% count(cyltype)
+```
+
+```{r}
+# Visualize distribution of a continuous
+# variable using histogram
+ggplot(data = carData) +
+  geom_histogram(aes(x = mpg), binwidth = 2.5)
+```
+
+```{r}
+# Visualzing the histogram using counts
+carData %>% 
+  count(cut_width(mpg, 2.5))
+```
+
+```{r}
+# Visualizing multiple histograms
+ggplot(data = carData, mapping = aes(x = mpg)) +
+  geom_freqpoly(binwidth = 2.5, mapping = aes(colour = cyltype))
+```
+
+```{r}
+# Boxplot to visualize the covariance
+# between a continuous and categorical
+# feature
+ggplot(data = carData, mapping = aes(x = cyltype, y = mpg)) +
+  geom_boxplot()
+```
+
+```{r}
+# Load the mpg dataset
+data('mpg')
+mpgData = mpg
+head(mpgData)
+```
+
+```{r}
+# Boxplot to visualize highway mpg according to
+# car type
+ggplot(data = mpgData, mapping = aes(x = class, y = hwy)) +
+  geom_boxplot()
+```
+
+```{r}
+# Reorder boxplot according to median 
+# to visualize the trend
+ggplot(data = mpgData, mapping = aes(x = reorder(class, hwy, FUN = median), y = hwy)) +
+  geom_boxplot()
+```
+
+```{r}
+# Flip the boxplot for better visualization
+ggplot(data = mpgData) +
+  geom_boxplot(mapping = aes(x = reorder(class, hwy, FUN = median), y = hwy)) +
+  coord_flip()
+```
+
+```{r}
+# Visualize covariance between two
+# categorical features
+carData %>% count(cyltype, am)
+ggplot(data = carData) +
+  geom_count(mapping = aes(x = cyltype, y = am))
+```
+
+```{r}
+# Visualize covariance between two
+# continuous features - create a
+# scatter plot of mpg vs. HP
+ggplot(data = carData, aes(x = hp, y = mpg, color = factor(cyl))) +
+  geom_point(size = 1) 
+```
+
+```{r}
+# Load the diamonds dataset
+data(diamonds)
+head(diamonds)
+```
+
+```{r}
+# Visualize covariance between two
+# continuous features - create a
+# scatter plot of carat vs. price
+ggplot(data = diamonds) +
+  geom_point(mapping = aes(x = carat, y = price))
+```
+
+```{r}
+# Load the hexbin package
+library(hexbin)
+```
+
+```{r}
+ggplot(data = diamonds) +
+  geom_hex(mapping = aes(x = carat, y = price))
+```
+
+
+
+

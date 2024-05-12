@@ -1,0 +1,62 @@
+---
+title: "The tidyr Library for Data Transformation"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+table1 
+```
+
+```{r}
+table2
+```
+
+```{r}
+table3
+```
+
+```{r}
+table4a
+```
+
+```{r}
+table1 %>% mutate()
+#table1 %>% count(year, wt = cases)
+#ggplot(data = ), aes(x = , y = )) +
+#  geom_line(aes(group = ), color = 'gray')+
+#  geom_point(aes(color = ))
+```
+
+```{r}
+# Select year, country and population, and
+# turn the long dataframe into a wide one
+table1 %>% select() %>% spread()
+```
+
+```{r}
+# Create a wide dataframe
+table1.wide = table1 %>% filter(!is.na(cases)) 
+head(table1.wide)
+```
+
+```{r}
+# Convert wide dataframe to a long one
+head(table1.wide)
+table1.wide %>% gather()
+```
+
+```{r}
+# Importing data 
+file = 'mtcars.csv'
+carData = read.csv(file, header = TRUE, row.names = 1, stringsAsFactors = FALSE)
+head(carData)
+```
+
+```{r}
+# Exporting data
+write_csv(stockData.wide, file = 'stock.csv')
+```
