@@ -1,10 +1,13 @@
 ---
 title: "Graphing Using ggplot Part-3"
-output: html_notebook
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 ```{r}
 library(ggplot2)
+library(dplyr)
 ```
 
 ```{r}
@@ -19,54 +22,58 @@ head(mpgData, 5)
 ```{r}
 # Plot a scatter plot of mileage w.r.t. displacement
 ggplot(data = mpgData) + 
-  geom_?(mapping = aes(x = ?, y = ?))
+  geom_point(mapping = aes(x = displ, y = hwy))
 ```
 
 ```{r}
 # Plot a bar chart w.r.t. number of cylinders
 ggplot(data = mpgData) +
-  geom_?(mapping = aes(? = ?))
+  geom_bar(mapping = aes(x = cyl))
 ```
 
 ```{r}
 #  Which stat geom_bar uses by default?
-
+?geom_bar
 ```
 
 ```{r}
 # Using a stat explicitly
 ggplot(data = mpgData) +
-  ?(mapping = aes(x = cyl))
+  stat_count(mapping = aes(x = cyl))
 ```
 
 ```{r}
+mpgData$cyl
+table(mpgData$cyl) # Shows the frequency table
 tempData = data.frame(table(mpgData$cyl))
 colnames(tempData) = c('cyl', 'frequency')
+tempData
 ```
 
 ```{r}
 # Plot a bar chart w.r.t. number of cylinders directly
 ggplot(data = tempData) +
-  geom_bar(mapping = aes(x = cyl, y = frequency))
+  geom_bar(mapping = aes(x = cyl, y = frequency), stat = 'identity')
 ```
 
 ```{r}
 #  Plot a bar chart of proportion, rather than count w.r.t. number of cylinders
 ggplot(data = mpgData) +
-  geom_bar(mapping = aes(x = cyl))
+  geom_bar(mapping = aes(x = cyl, y = after_stat(prop))) # The dot-dot notation (`..prop..`) was deprecated in ggplot2 3.4.0.
 ```
 
 ```{r}
 # Plot a histogram of engine displacement
 ggplot(data = mpgData) +
-  geom_histogram(aes(x = displ, y = ..count..), binwidth = 0.5, color = 'black', fill = 'steelblue', alpha = 0.4) +
+  geom_histogram(aes(x = displ, y = after_stat(count)), binwidth = 0.5, color = 'black', fill = 'steelblue', alpha = 0.4) +
   labs(x = 'Displacement (litres)', y = 'Frequency')
+#The dot-dot notation (`..count..`) was deprecated in ggplot2 3.4.0.
 ```
 
 ```{r}
 # Plot a bar chart w.r.t. number of cylinders and class using color and fill
 ggplot(data = mpgData) +
-  geom_bar(mapping = aes(x = cyl, fill = ?))
+  geom_bar(mapping = aes(x = cyl, fill = class), position = 'identity', alpha = .5)
 ```
 
 
