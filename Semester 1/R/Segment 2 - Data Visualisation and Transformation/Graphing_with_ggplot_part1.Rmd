@@ -41,7 +41,7 @@ p1
 
 # Map the color aesthetic to the class variable
 p2 = ggplot(data = mpgData) +
-  geom_point(mapping = aes(x = displ, y = hwy))
+  geom_point(mapping = aes(x = displ, y = hwy, colour = class))
 p2
 ```
 
@@ -50,7 +50,7 @@ p2
 
 # Map the size (or alpha or shape) aesthetic to the class variable
 p3 = ggplot(data = mpgData) +
-  geom_point(aes(x = displ, y = hwy))
+  geom_point(aes(x = displ, y = hwy, size = class, colour = class))
 p3
 ```
 
@@ -59,7 +59,7 @@ p3
 
 # Mark the points blue in color, square in shape, and fixed size
 p4 = ggplot(data = mpgData) +
-  geom_point(aes(x = displ, y = hwy))
+  geom_point(aes(x = displ, y = hwy), color = 'blue', shape = 5)
 p4
 ```
 
@@ -69,7 +69,7 @@ p4
 # Plot mileage w.r.t. each class individually
 ggplot(data = mpgData) + 
   geom_point(mapping = aes(x = displ, y = hwy)) + 
-  facet_wrap(, nrow = 2)
+  facet_wrap(~class, nrow = 2)
 ```
 
 ```{r}
