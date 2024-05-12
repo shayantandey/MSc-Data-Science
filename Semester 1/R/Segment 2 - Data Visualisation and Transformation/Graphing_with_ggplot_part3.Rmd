@@ -74,6 +74,8 @@ ggplot(data = mpgData) +
 # Plot a bar chart w.r.t. number of cylinders and class using color and fill
 ggplot(data = mpgData) +
   geom_bar(mapping = aes(x = cyl, fill = class), position = 'identity', alpha = .5)
+
+#This is where the lesson ends.
 ```
 
 
