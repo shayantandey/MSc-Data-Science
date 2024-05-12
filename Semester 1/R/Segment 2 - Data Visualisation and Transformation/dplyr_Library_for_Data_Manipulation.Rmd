@@ -1,6 +1,8 @@
 ---
 title: "The dplyr Library for Data Manipulation Part-1"
-output: html_notebook
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 ```{r}
@@ -39,120 +41,128 @@ str(carData)
 
 ```{r}
 # Select only the feature wt
-select()
+select(carData, wt)
 ```
 
 ```{r}
 # Select everything except the feature wt
-select()
+select(carData, -wt)
 ```
 
 ```{r}
 # Select only the features cyl and wt
-select()
+select(carData, c(cyl, wt)) # Quotes not required for column names because dplyr knows this from the dataframe
 ```
 
 ```{r}
 # Select everything except the features cyl and wt
-select()
+select(carData, -c(cyl, wt))
 ```
 
 ```{r}
 # Filter cars with V-shaped engine 
-filter()
+filter(carData, vs == 0)
 ```
 
 ```{r}
 # Filter cars with V-shaped engine and manual transmission
-filter()
+filter(carData, vs == 0 & am == 1)
 ```
 
 ```{r}
 # Filter cars with V-shaped engine and manual transmission
 # and hp greater than 150 or less than 100
-filter(carData, )
+filter(carData, vs == 0 & am == 1 & (hp < 100 | hp > 150))
 ```
 
 ```{r}
 # Select only the feature cyl and wt for cars with v-shaped engine
-carData %>%  
+carData %>% filter(vs == 0) %>% select(cyl, wt)
 ```
 
 ```{r}
 # Select only the feature cyl and wt for cars with v-shaped engine
 # and hp greater than 150
-carData %>%  
+carData %>% filter(vs == 0 & hp > 150) %>% select(cyl, wt)
 ```
 
 ```{r}
 # Create a new column called wtton
-mutate()
+mutate(carData, wtton = 0.45*wt)
 ```
 
 ```{r}
 # Create a new column called wtton by ensuring
 # cars with NA weight values are negelected
-carData %>% 
+carData = carData %>% filter(!is.na(wt)) %>% mutate(wtton = 0.45*wt)
 ```
 
 ```{r}
 # Check if wtton is a new column in the dataframe
-
+colnames(carData)
 ```
 
 ```{r}
 # Add a new column called cyltype with value High
 # is cyl is greater than 4 and Low otherwise
-carData %>% mutate(cyltype = ifelse(cyl >4, 'High', 'Low'))
+carData %>% mutate(cyltype = ifelse(cyl > 4, 'High', 'Low'))
 ```
 
 ```{r}
 # Create a new data frame with the cyltype and wtton added
-carData.new = carData %>% mutate(cyltype = ifelse(cyl >6, 'High', 'Low'), wtton = 0.45*wt)
+carData.new = carData %>% mutate(cyltype = ifelse(cyl > 4, 'High', 'Low'), wtton = 0.45*wt)
 head(carData.new, 5)
 ```
 
 ```{r}
 # Return the mean weight (in tons) of the cars
-carData.new %>% 
+carData.new %>% summarise(mean(wtton))
 ```
 ```{r}
-# Return the mean weight (in tons) and mean displacement
+# Return the mean weight (in tons) and mean or minimum displacement
 # of the cars
-carData.new %>% 
+carData.new %>% summarise(mean(wtton), mean(disp))
+carData.new %>% summarise(mean(wtton), min(disp))
 ```
 
 ```{r}
 # Group cars according to cyltype and calculate mean weight and
 # mean displacement
-carData.new %>% 
+carData.new %>% group_by(cyltype) %>% summarise(mean(wtton), mean(disp))
 ```
 
 ```{r}
 # Group cars according to cyltype and calculate mean weight and
 # minimum displacement
-carData.new %>%
+carData.new %>% group_by(cyltype) %>% summarise(mean(wtton), min(disp))
 ```
 
 ```{r}
 # Group cars according to cyltype and calculate mean weight and
 # minimum displacement followed by arranging in increasing order
 # of mean weight
-carData.new %>% 
+
+carData.new %>% group_by(cyltype) %>% summarise(mwt = mean(wtton), mdisp = min(disp)) %>% arrange(mwt)
+
+# Group cars according to cyltype and calculate mean weight and
+# minimum displacement followed by arranging in decreasing order
+# of mean weight
+
+carData.new %>% group_by(cyltype) %>% summarise(mwt = mean(wtton), mdisp = min(disp)) %>% arrange(desc(mwt))
 ```
 
 ```{r}
 # Return number of samples for each cyltype
-carData.new %>% 
+carData.new %>% group_by(cyltype) %>% count()
 ```
 
 ```{r}
 # Return number of samples for each cyltype and vs
-carData.new %>% 
+carData.new %>% count(cyltype, vs)
 ```
 
 ```{r}
 # Return number of samples for each cyltype and sort by
 # increasing order of count
-carData.new %>% 
+carData.new %>% count(cyltype) %>% arrange(n)
 ```
