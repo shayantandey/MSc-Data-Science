@@ -1,6 +1,8 @@
 ---
 title: "The tidyr Library for Data Transformation"
-output: html_notebook
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 ```{r}

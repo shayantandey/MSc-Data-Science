@@ -1,6 +1,8 @@
 ---
 title: "Exploratory Data Analysis Using R"
-output: html_notebook
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 ```{r}
@@ -17,6 +19,9 @@ categorical_cols = c('vs', 'am')
 
 # Convert the columns to factor type
 carData[categorical_cols] = lapply(carData[categorical_cols], as.factor)
+
+# Print the structure of the dataframe
+str(carData)
 ```
 
 ```{r}
