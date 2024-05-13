@@ -1,0 +1,88 @@
+---
+title: "Webinar2"
+output:
+  html_document:
+    df_print: paged
+editor_options:
+  chunk_output_type: console
+---
+
+#### Load libraries
+```{r}
+library(ggplot2) # plotting library
+library(dplyr)   # data wrangling library
+```
+
+#### Data types and data structures in R
+```{r}
+# Vector
+myvector1 = c(1, 2, 3)
+myvector2 = c('a', 'b', 'c')
+myvector3 = c(TRUE, FALSE, TRUE)
+
+# List
+mylist1 = list(1, 'Name', c('a', 'b', 'c'))
+mylist2 = list(list(10, 15, 31), c(1, 2, 3), c(TRUE, FALSE))
+
+# Factor
+myfactor = factor(c('Male', 'Female', 'Male', 'Male', 'Female'))
+
+# Matrix
+mymatrix1 = matrix(c(1:6), nrow = 2, ncol = 3)
+mymatrix2 = matrix(c(1:6), nrow = 2, ncol = 3, byrow = TRUE)
+```
+
+```{r}
+typeof(myvector1)
+typeof(myvector2)
+typeof(myvector3)
+typeof(mylist1)
+typeof(mymatrix1)
+```
+
+```{r}
+str(myvector1)
+str(myvector2)
+str(myvector3)
+str(mylist1)
+str(mylist2)
+str(myfactor)
+str(mymatrix1)
+```
+
+#### Load a dataset into a dataframe (list of lists)
+```{r}
+foodData = read.csv('Data/food-texture.csv', row.names = 1)
+str(foodData)
+```
+
+#### Attributes of a dataframe
+```{r}
+colnames(foodData)
+rownames(foodData)
+nrow(foodData)
+ncol(foodData)
+```
+
+#### Accessing elements of a dataframe
+```{r}
+foodData$Oil
+foodData[['Oil']]
+foodData[, 'Oil']
+foodData[, 1]
+foodData['Oil']
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
