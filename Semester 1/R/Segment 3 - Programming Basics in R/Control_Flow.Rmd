@@ -1,48 +1,118 @@
 ---
 title: "Control Flow in R"
-output: html_notebook
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 
 ```{r}
 # Logical expressions-1: relational operators
+x = 5  # Assignment
+x == 4 # Comparison
 ```
 
 ```{r}
 # Logical expressions-2: logical operators
 l1 = c(TRUE, FALSE, FALSE, TRUE)
 l2 = c(TRUE, TRUE, FALSE, FALSE)
+
+# Logical And (short form)
+l1 & l2
+
+# Logical Or (short form)
+l1 | l2
+
+# Logical Not
+!(TRUE)
+!(FALSE)
+
 ```
 
 ```{r}
 # Logical expressions-3: value matching
 names = c('Ajith', 'Priya', 'Gabriel')
+'Ajith' %in% names
+'Ajit' %in% names
+
+# Not operator
+!'Ajith' %in% names
+!'Ajit' %in% names
 ```
 
 ```{r}
-# Special functions 
+# Special functions all(), any(), isTRUE(), isFALSE()
+all(l1) # Check if all elements of l1 is TRUE
+any(l1) # Check if any element of l1 is TRUE
+
+x = c(1, 2, NA)
+x > 0 # Checks all elements of x
+any(x > 0) # Checks if any element is greater than 0
+all(x > 0) # This returns NA which is not desired. This happens becasue x has NA.
+isTRUE(all(x > 0))
+
+x = c(1:4)
+y = (x^(1/2))^2
+print(x)
+print(y)
+all.equal(x, y) # Check if two quantities are ALMOST close to each other
 ```
 
 
 ```{r}
 # If-statement
+x = -2
+if (x %% 2 != 0) {
+  print('odd')
+} else{
+    print('even')
+}
 
+if (x >0){
+  print('positive')
+}else if (x < 0){
+  print('negative')
+}else {
+  print('zero')
+}
 ```
 
 
 ```{r}
 # Vectorized if-statement
-
+x = c(1:10)
+print(x)
+ifelse(x %% 2 == 0, 'even', 'odd')
 ```
 
 ```{r}
 # For-statement
+x = c(1:10)
+for (val in x) {
+  print(val)
+}
+
+x = c(1:10)
+for (val in x) {
+  y = val^2
+  print(y)
+}
+
+names = c('Ajith', 'Priya', 'Gabriel')
+print(names)
+for (n in names) {
+  print(n)
+}
 
 ```
 
 ```{r}
 # While-statement
-
+x = 1
+while (x > 0.3) {
+ x = runif(1)
+ print(x)
+}
 ```
 
 
