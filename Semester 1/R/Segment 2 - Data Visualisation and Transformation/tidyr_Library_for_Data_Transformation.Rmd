@@ -24,11 +24,11 @@ table4a
 ```
 
 ```{r}
-table1 %>% mutate()
-#table1 %>% count(year, wt = cases)
-#ggplot(data = ), aes(x = , y = )) +
-#  geom_line(aes(group = ), color = 'gray')+
-#  geom_point(aes(color = ))
+table1 %>% mutate(rate = (cases / population)*10000)
+table1 %>% count(year, wt = cases)
+ggplot(data = table1 %>% mutate(rate = (cases / population)*10000), aes(x = year, y = rate)) +
+  geom_line(aes(group = country), color = 'gray')+
+  geom_point(aes(color = country))
 ```
 
 ```{r}
