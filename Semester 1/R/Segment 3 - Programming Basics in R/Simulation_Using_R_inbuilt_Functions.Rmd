@@ -1,0 +1,49 @@
+---
+title: "Simulation Using R In-built Functions"
+output: html_notebook
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+```{r}
+# A fun exercise to simulate the rolling of a fair die
+# Sampling space for rolling a pair of fair dice
+s = 
+
+# Corresponding probabilities
+p = 
+
+# The sampling process
+
+```
+
+```{r}
+
+# Function to check if the sum of the rolls is at least 7
+
+
+# Probability that the sum of the rolls is at least 7
+
+# Function to check if the first roll is even
+
+# Probability that the first roll is even
+```
+
+```{r}
+# Simulating a discrete random variable 
+n = 
+p = 
+nsimulations = 
+simulatedData = 
+```
+
+```{r}
+# Simulating a continuous random variable
+
+```
+
+
+

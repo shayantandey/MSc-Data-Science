@@ -1,0 +1,50 @@
+---
+title: "Control Flow in R"
+output: html_notebook
+---
+
+
+```{r}
+# Logical expressions-1: relational operators
+```
+
+```{r}
+# Logical expressions-2: logical operators
+l1 = c(TRUE, FALSE, FALSE, TRUE)
+l2 = c(TRUE, TRUE, FALSE, FALSE)
+```
+
+```{r}
+# Logical expressions-3: value matching
+names = c('Ajith', 'Priya', 'Gabriel')
+```
+
+```{r}
+# Special functions 
+```
+
+
+```{r}
+# If-statement
+
+```
+
+
+```{r}
+# Vectorized if-statement
+
+```
+
+```{r}
+# For-statement
+
+```
+
+```{r}
+# While-statement
+
+```
+
+
+
+
