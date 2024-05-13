@@ -1,0 +1,96 @@
+---
+title: "Assignment-1"
+output:
+  pdf_document: default
+  html_notebook: default
+editor_options:
+  chunk_output_type: inline
+---
+
+**Execute the following cell to load the tidyverse library:**
+
+```{r}
+library(tidyverse)
+```
+
+**Execute the following cell to load the data. Refer to this website <http://archive.ics.uci.edu/ml/datasets/Auto+MPG> for details on the dataset:**
+
+```{r}
+autompg = read.table(
+  "http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data",
+  quote = "\"",
+  comment.char = "",
+  stringsAsFactors = FALSE)
+head(autompg,20)
+```
+
+**Question 1.1**: print the structure of the unedited data set. How many samples and features are there? Ans - 398 samples and 9 features.
+
+```{r}
+str(autompg)
+```
+
+**Execute the following cell to assign names to the columns of the dataframe:**
+
+```{r}
+colnames(autompg) = c("mpg", "cyl", "disp", "hp", "wt", "acc", "year", "origin", "name")
+str(autompg) # Validate the result
+```
+
+**Question 1.2**: complete the code segment below to remove samples with missing horsepower (hp) values represented as a "?" in the dataset.
+
+```{r}
+autompg = autompg %>% filter(!(hp == '?'))
+autompg %>% filter(hp == '?') # Validate the result
+```
+
+**Question 1.3**: complete the code segment below to remove samples with the name "plymouth reliant"
+
+```{r}
+autompg = autompg %>% filter(!(name == 'plymouth reliant'))
+autompg %>% filter((name == 'plymouth reliant')) # Validate the result
+```
+
+**Question 2.1**: complete the code segment below to select all features except 'name'
+
+```{r}
+autompg = autompg %>% select(-name)
+str(autompg) # Validate the result
+```
+
+**Execute the following cell to change the type of hp values from character to numeric:**
+
+```{r}
+autompg$hp = as.numeric(autompg$hp)
+str(autompg) # Validate that type has changed from chr to num for hp
+```
+
+**Question 2.2**: complete the code cell to modify 'origin' column to reflect local (1) and international models (0)
+
+```{r}
+autompg = autompg %>% mutate(origin = ifelse(origin == 1, 'local', 'international'))
+head(autompg, 20)
+```
+
+**Question 2.3**: print the structure of the dataframe. What types are the columns 'cyl' and 'origin'? Ans - 'cyl' is type int and 'origin' is type chr.
+
+```{r}
+str(autompg)
+```
+
+**Question 3.1**: complete the code segment below to change the types of 'cyl' and 'origin' columns to factor
+
+```{r}
+ catcols = c('cyl', 'origin')
+ autompg[catcols] = lapply(autompg[catcols], as.factor)
+ str(autompg) # Validate the change
+```
+
+**Question 3.2**: complete the code segment below to create a scatter plot of mpg vs. displacement by color coding the points according to the origin (local or international). Add axes labels and title for the plot. Comment on what you observe: mpg and displacement are inversely proportional. As displacement increases, miles per gallon decreases and vice-versa.
+
+```{r}
+p = ggplot(data = autompg, aes(x = mpg, y = disp, color = wt)) + 
+             geom_point() +
+             labs(x = 'Miles Per Gallon', y = 'Displacement', title = 'Miles Per Gallon vs Displacement')
+p
+```

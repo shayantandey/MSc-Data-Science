@@ -1,6 +1,8 @@
 ---
 title: "Simulation Using R In-built Functions"
-output: html_notebook
+output:
+  pdf_document: default
+  html_notebook: default
 ---
 
 ```{r}
@@ -11,38 +13,110 @@ library(dplyr)
 ```{r}
 # A fun exercise to simulate the rolling of a fair die
 # Sampling space for rolling a pair of fair dice
-s = 
+s = c(1:6)
 
 # Corresponding probabilities
-p = 
+#p = c(1/6, 1/6, 1/6, 1/6, 1/6, 1/6)
+p = (1/6) * replicate(6, 1)
 
 # The sampling process
+nsimulation = 10
+#sample(s, 1, replace = TRUE, prob = p) # Roll a dice with replacement
+#sample(s, 2, replace = TRUE, prob = p) # Roll two dice
+print("Rolling a dice 10 times:")
+replicate(nsimulation, sample(s, 1, replace = TRUE, prob = p))
+print("Rolling 2 dice 10 times")
+replicate(nsimulation, sample(s, 2, replace = TRUE, prob = p))
 
+# Performing 100 simulations of rolling a dice
+nsimulation = 100
+simulatedData = replicate(nsimulation, sample(s, 1, replace = TRUE, prob = p))
+str(simulatedData)
+print(simulatedData)
 ```
 
 ```{r}
+nsimulation = 1e5
+simulatedData = replicate(nsimulation, sample(s, 2, replace = TRUE, prob = p))
 
 # Function to check if the sum of the rolls is at least 7
-
+checkEvent = function(data){
+  if (sum(data) >= 7) {
+    return(1)
+  } else{
+    return(0)
+  }
+}
 
 # Probability that the sum of the rolls is at least 7
+#print(simulatedData)
+#apply(simulatedData, 2, checkEvent)
+mean(apply(simulatedData, 2, checkEvent))
 
 # Function to check if the first roll is even
+checkEvent1 = function(data){
+  if (data[1] %% 2 == 0){
+    return(1)
+  } else{
+    return(0)
+  }
+}
+#apply(simulatedData, 2, checkEvent1)
+mean(apply(simulatedData, 2, checkEvent1))
 
 # Probability that the first roll is even
+
 ```
 
 ```{r}
-# Simulating a discrete random variable 
-n = 
-p = 
-nsimulations = 
-simulatedData = 
+# Simulating a discrete random variable (n = 10, p = 0.6)
+n = 10
+p = 0.6
+nsimulations = 1e5 
+simulatedData = rbinom(nsimulations, n, p)
+df = as.data.frame(table(simulatedData))
+colnames(df) = c('Value', 'Frequency')
+#head(df)
+p = ggplot(data = df) +
+  geom_col(aes(x = Value, y = Frequency), width = 0.7, fill = 'steelblue') +
+  ggtitle('Simulating a binomial random variable') +
+  labs(x = 'Values', y = 'Frequency') +
+  theme_minimal()
+p
 ```
+
+```{r}
+# Poissons Distribution
+rpois(100, lambda = 10)
+```
+
 
 ```{r}
 # Simulating a continuous random variable
+mu = 170
+sigma = 8
+nsimulations = 1e5
+simulatedData = rnorm(nsimulations, mean = mu, sd = sigma)
+df = as.data.frame(simulatedData)
+colnames(df) = 'Height'
+head(df)
+mean((df['Height'] >= 170) & (df['Height'] <= 171))
 
+delta = 2
+p1 = ggplot(data = df) +
+  geom_histogram(aes(x = Height, y = ..count..), breaks = seq(mu - 4*sigma, mu + 4*sigma, by = delta), colour = 'black', fill = 'steelblue', alpha = 0.4) +
+  labs(x = 'Height', y = 'Frequency')
+p1
+
+p2 = ggplot(data = df) +
+  geom_histogram(aes(x = Height, y = ..count../sum(..count..)), breaks = seq(mu - 4*sigma, mu + 4*sigma, by = delta), colour = 'black', fill = 'steelblue', alpha = 0.4) +
+  labs(x = 'Height', y = 'Relative Frequency')
+p2
+
+p3 = ggplot(data = df) +
+  geom_histogram(aes(x = Height, y = ..density..), breaks = seq(mu - 4*sigma, mu + 4*sigma, by = delta), colour = 'black', fill = 'steelblue', alpha = 0.4) +
+  labs(x = 'Height', y = 'Density')
+p3
 ```
 
 
