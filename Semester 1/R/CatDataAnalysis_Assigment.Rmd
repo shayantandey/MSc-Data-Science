@@ -1,0 +1,35 @@
+---
+title: "Assignment"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+```{r}
+# Step 1: Create the student_data dataframe
+student_data <- data.frame(
+  StudyHours = c(2.5, 1.5, 3, 2, 4, 5, 1, 3.5, 2.5, 4),
+  PrepCourse = c(0, 0, 1, 0, 1, 1, 0, 1, 0, 1),
+  PassedExam = c(0, 0, 1, 0, 1, 1, 0, 1, 0, 1)
+)
+
+# Step 2: Fit a logistic regression model
+model <- glm(PassedExam ~ StudyHours + PrepCourse, data = student_data, family = binomial)
+
+# Step 3: Summarize the model to view the results
+summary(model)
+
+# Step 4: Make predictions (optional step)
+# Predict probabilities of passing the exam for the students in the dataset
+predicted_probabilities <- predict(model, type = "response")
+
+# Predict binary outcomes based on a threshold of 0.5
+predicted_outcomes <- ifelse(predicted_probabilities > 0.5, 1, 0)
+
+# Print the predicted probabilities and outcomes
+print(predicted_probabilities)
+print(predicted_outcomes)
+
+```
+
+
