@@ -1,0 +1,10 @@
+name texlive.infra.aarch64-linux
+category TLCore
+revision 70811
+shortdesc aarch64-linux files of texlive.infra
+containersize 82688
+containerchecksum c47e8e27b73f44f746cc2dcc60faeefee9ae576c3994c8bf864f92b4735166b711a5da6d051c5771ff720efe79c5bb1a291b57e83e78d3365196e0e95fe8e686
+binfiles arch=aarch64-linux size=49
+ bin/aarch64-linux/mktexlsr
+ bin/aarch64-linux/tlmgr
+ tlpkg/installer/xz/xz.aarch64-linux

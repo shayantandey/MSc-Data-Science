@@ -1,0 +1,13 @@
+name dvipdfmx.aarch64-linux
+category TLCore
+revision 70910
+shortdesc aarch64-linux files of dvipdfmx
+containersize 413136
+containerchecksum c14ef476efb90763115136497617beb6eb38e91b826d322039deea5d4cda9a1aafd6bde1bee58266183bbc7716b57d4b7ae5a66ecaf36c70c122e500fd1e7934
+binfiles arch=aarch64-linux size=278
+ bin/aarch64-linux/dvipdfm
+ bin/aarch64-linux/dvipdfmx
+ bin/aarch64-linux/dvipdft
+ bin/aarch64-linux/ebb
+ bin/aarch64-linux/extractbb
+ bin/aarch64-linux/xdvipdfmx

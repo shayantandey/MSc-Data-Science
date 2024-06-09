@@ -1,0 +1,13 @@
+name mfware.aarch64-linux
+category TLCore
+revision 70577
+shortdesc aarch64-linux files of mfware
+containersize 119092
+containerchecksum dd424ac97ac056fc3501617c4b7561d9e93f246149a245017714d143d889902100be61f8a7c8821453dcec1b413803e7c1399f50f479a0c842873931ca72ecb9
+binfiles arch=aarch64-linux size=158
+ bin/aarch64-linux/gftodvi
+ bin/aarch64-linux/gftopk
+ bin/aarch64-linux/gftype
+ bin/aarch64-linux/mft
+ bin/aarch64-linux/pktogf
+ bin/aarch64-linux/pktype

@@ -1,0 +1,8 @@
+name luahbtex.aarch64-linux
+category TLCore
+revision 70276
+shortdesc aarch64-linux files of luahbtex
+containersize 2236952
+containerchecksum c0e0053a67ed69441786d879c8ffccba0472adbf9187dbc94c63da93f2e8ee108961eb61a920588ac10ba4fb6ecac6098fbdd1b34a5c46b9452d6ef3c16bdcd2
+binfiles arch=aarch64-linux size=2098
+ bin/aarch64-linux/luahbtex

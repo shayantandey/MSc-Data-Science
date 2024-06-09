@@ -1,0 +1,10 @@
+name metafont.aarch64-linux
+category Package
+revision 70276
+shortdesc aarch64-linux files of metafont
+containersize 188764
+containerchecksum cba40257cc811e8fb789520b6aa418edda82be9229f420abb723675d599c49e1be362ea09a63a374dd2b3d232f42321794831c573aa35a38583a93e43be56fbb
+binfiles arch=aarch64-linux size=207
+ bin/aarch64-linux/inimf
+ bin/aarch64-linux/mf
+ bin/aarch64-linux/mf-nowin

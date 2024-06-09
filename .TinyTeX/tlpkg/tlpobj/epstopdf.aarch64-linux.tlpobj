@@ -1,0 +1,9 @@
+name epstopdf.aarch64-linux
+category Package
+revision 46208
+shortdesc aarch64-linux files of epstopdf
+containersize 364
+containerchecksum 5d8e4cc9eaf28dbac98d5c3805e44caff7acc1769b7f3747f105c7772e9d56bbe63c3f83b98ab2dd8688c5b58e5b286ad51168e764b33d964d0fd948b4701161
+binfiles arch=aarch64-linux size=2
+ bin/aarch64-linux/epstopdf
+ bin/aarch64-linux/repstopdf

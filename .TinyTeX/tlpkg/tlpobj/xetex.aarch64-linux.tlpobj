@@ -1,0 +1,12 @@
+name xetex.aarch64-linux
+category TLCore
+revision 70772
+shortdesc aarch64-linux files of xetex
+containersize 7659776
+containerchecksum c7f188c335912106eb5dcf3685779c5fc938c0b7ac52258e9de836d35ef37ed7d55a161a3b78be23f9303481523cb053bbdd5d30399053fb07e894daef6935de
+binfiles arch=aarch64-linux size=7261
+ bin/aarch64-linux/teckit_compile
+ bin/aarch64-linux/xelatex
+ bin/aarch64-linux/xelatex-unsafe
+ bin/aarch64-linux/xetex
+ bin/aarch64-linux/xetex-unsafe

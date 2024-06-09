@@ -1,0 +1,11 @@
+name luatex.aarch64-linux
+category TLCore
+revision 70276
+shortdesc aarch64-linux files of luatex
+containersize 1731312
+containerchecksum 82d4f812981036c0d5a1093bc2904b05e8c10de91d190a1fb687fa544eb5f66921e8cae4db9264ff19f4c5c0c28d5188b3414b599de0d38215eff0bf5741cc3c
+binfiles arch=aarch64-linux size=1744
+ bin/aarch64-linux/dviluatex
+ bin/aarch64-linux/luatex
+ bin/aarch64-linux/texlua
+ bin/aarch64-linux/texluac

@@ -1,0 +1,11 @@
+name latex-bin.aarch64-linux
+category TLCore
+revision 54018
+shortdesc aarch64-linux files of latex-bin
+containersize 384
+containerchecksum c8f47dcfa5c29be25ded52e0f44d11d7aa00f041e3118875f19f8e47921e814dd84a4854043ca75c70b0cf76bafa7b4e8cd8f15c715ed8cddc4883937d84722c
+binfiles arch=aarch64-linux size=4
+ bin/aarch64-linux/dvilualatex
+ bin/aarch64-linux/latex
+ bin/aarch64-linux/lualatex
+ bin/aarch64-linux/pdflatex

@@ -1,0 +1,8 @@
+name luaotfload.aarch64-linux
+category Package
+revision 46208
+shortdesc aarch64-linux files of luaotfload
+containersize 348
+containerchecksum 5a2141f4e940e971f11151776503faeb7834ea23fdd2600dcc0aca333854459a3a3dbcb38b4e6d0fe25a953470022958af319c170cb30ceedf1394656a447e2f
+binfiles arch=aarch64-linux size=1
+ bin/aarch64-linux/luaotfload-tool

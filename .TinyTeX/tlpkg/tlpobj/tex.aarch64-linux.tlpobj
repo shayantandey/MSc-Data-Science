@@ -1,0 +1,9 @@
+name tex.aarch64-linux
+category TLCore
+revision 70276
+shortdesc aarch64-linux files of tex
+containersize 175984
+containerchecksum c85cad7382d4ebfddca0dfa9ffafc28a5e50eff5e3fa3224d28ca78137fc0084e2eb9dd8cd185d300bc59616ca48c4408de1c1777ca8a11cbfd537fd44ac4ee6
+binfiles arch=aarch64-linux size=115
+ bin/aarch64-linux/initex
+ bin/aarch64-linux/tex

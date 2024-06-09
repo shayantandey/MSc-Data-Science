@@ -1,0 +1,8 @@
+name latexmk.aarch64-linux
+category Package
+revision 46208
+shortdesc aarch64-linux files of latexmk
+containersize 340
+containerchecksum 0b397c69945221fc6575c719ba1b9a28cdec5c3e24ac2e5be0eee434f64c9be0fd8be7078cb374b8fc81a8fa97d28ecd3febbe58f35cac749281f4399d9d0f4e
+binfiles arch=aarch64-linux size=1
+ bin/aarch64-linux/latexmk

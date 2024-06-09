@@ -1,0 +1,885 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Programming Assignment 3},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Programming Assignment 3}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\subsection{Introduction}\label{introduction}
+
+Download the file ProgAssignment3-data.zip file containing the data for
+Programming Assignment 3 from the Coursera web site. Unzip the file in a
+directory that will serve as your working directory. When you start up R
+make sure to change your working directory to the directory where you
+unzipped the data. The data for this assignment come from the Hospital
+Compare web site (\url{http://hospitalcompare.hhs.gov}) run by the U.S.
+Department of Health and Human Services. The purpose of the web site is
+to provide data and information about the quality of care at over 4,000
+Medicare-certified hospitals in the U.S. This dataset essentially covers
+all major U.S. hospitals. This dataset is used for a variety of
+purposes, including determining whether hospitals should be fined for
+not providing high quality care to patients (see
+\url{http://goo.gl/jAXFX} for some background on this particular topic).
+The Hospital Compare web site contains a lot of data and we will only
+look at a small subset for this assignment. The zip file for this
+assignment contains three files • outcome-of-care-measures.csv: Contains
+information about 30-day mortality and readmission rates for heart
+attacks, heart failure, and pneumonia for over 4,000 hospitals. •
+hospital-data.csv: Contains information about each hospital. •
+Hospital\_Revised\_Flatfiles.pdf: Descriptions of the variables in each
+file (i.e the code book). A description of the variables in each of the
+files is in the included PDF file named
+Hospital\_Revised\_Flatfiles.pdf. This document contains information
+about many other files that are not included with this programming
+assignment. You will want to focus on the variables for Number 19
+(``Outcome of Care Measures.csv'') and Number 11 (``Hospital
+Data.csv''). You may find it useful to print out this document (at least
+the pages for Tables 19 and 11) to have next to you while you work on
+this assignment. In particular, the numbers of the variables for each
+table indicate column indices in each table (i.e.~``Hospital Name'' is
+column 2 in the outcome-of-care-measures.csv file).
+
+\subsection{1 Plot the 30-day mortality rates for heart
+attack}\label{plot-the-30-day-mortality-rates-for-heart-attack}
+
+Read the outcome data into R via the read.csv function and look at the
+first few rows.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{outcome }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"ProgrammingAssignment3\_Data/outcome{-}of{-}care{-}measures.csv"}\NormalTok{, }\AttributeTok{colClasses =} \StringTok{"character"}\NormalTok{)}
+\FunctionTok{head}\NormalTok{(outcome)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Provider.Number                    Hospital.Name                  Address.1
+## 1          010001 SOUTHEAST ALABAMA MEDICAL CENTER     1108 ROSS CLARK CIRCLE
+## 2          010005    MARSHALL MEDICAL CENTER SOUTH 2505 U S HIGHWAY 431 NORTH
+## 3          010006   ELIZA COFFEE MEMORIAL HOSPITAL         205 MARENGO STREET
+## 4          010007         MIZELL MEMORIAL HOSPITAL              702 N MAIN ST
+## 5          010008      CRENSHAW COMMUNITY HOSPITAL        101 HOSPITAL CIRCLE
+## 6          010010    MARSHALL MEDICAL CENTER NORTH    8000 ALABAMA HIGHWAY 69
+##   Address.2 Address.3         City State ZIP.Code County.Name Phone.Number
+## 1                           DOTHAN    AL    36301     HOUSTON   3347938701
+## 2                             BOAZ    AL    35957    MARSHALL   2565938310
+## 3                         FLORENCE    AL    35631  LAUDERDALE   2567688400
+## 4                              OPP    AL    36467   COVINGTON   3344933541
+## 5                          LUVERNE    AL    36049    CRENSHAW   3343353374
+## 6                     GUNTERSVILLE    AL    35976    MARSHALL   2565718000
+##   Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack
+## 1                                                      14.3
+## 2                                                      18.5
+## 3                                                      18.1
+## 4                                             Not Available
+## 5                                             Not Available
+## 6                                             Not Available
+##   Comparison.to.U.S..Rate...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack
+## 1                                                No Different than U.S. National Rate
+## 2                                                No Different than U.S. National Rate
+## 3                                                No Different than U.S. National Rate
+## 4                                                           Number of Cases Too Small
+## 5                                                           Number of Cases Too Small
+## 6                                                           Number of Cases Too Small
+##   Lower.Mortality.Estimate...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack
+## 1                                                                                 12.1
+## 2                                                                                 14.7
+## 3                                                                                 14.8
+## 4                                                                        Not Available
+## 5                                                                        Not Available
+## 6                                                                        Not Available
+##   Upper.Mortality.Estimate...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack
+## 1                                                                                 17.0
+## 2                                                                                 23.0
+## 3                                                                                 21.8
+## 4                                                                        Not Available
+## 5                                                                        Not Available
+## 6                                                                        Not Available
+##   Number.of.Patients...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack
+## 1                                                                            666
+## 2                                                                             44
+## 3                                                                            329
+## 4                                                                             14
+## 5                                                                              9
+## 6                                                                             22
+##                                Footnote...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack
+## 1                                                                                                  
+## 2                                                                                                  
+## 3                                                                                                  
+## 4 number of cases is too small (fewer than 25) to reliably tell how well the hospital is performing
+## 5 number of cases is too small (fewer than 25) to reliably tell how well the hospital is performing
+## 6 number of cases is too small (fewer than 25) to reliably tell how well the hospital is performing
+##   Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure
+## 1                                                       11.4
+## 2                                                       15.2
+## 3                                                       11.3
+## 4                                                       13.6
+## 5                                                       13.8
+## 6                                                       12.5
+##   Comparison.to.U.S..Rate...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure
+## 1                                                 No Different than U.S. National Rate
+## 2                                                        Worse than U.S. National Rate
+## 3                                                 No Different than U.S. National Rate
+## 4                                                 No Different than U.S. National Rate
+## 5                                                 No Different than U.S. National Rate
+## 6                                                 No Different than U.S. National Rate
+##   Lower.Mortality.Estimate...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure
+## 1                                                                                   9.5
+## 2                                                                                  12.2
+## 3                                                                                   9.1
+## 4                                                                                  10.0
+## 5                                                                                   9.9
+## 6                                                                                   9.9
+##   Upper.Mortality.Estimate...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure
+## 1                                                                                  13.7
+## 2                                                                                  18.8
+## 3                                                                                  13.9
+## 4                                                                                  18.2
+## 5                                                                                  18.7
+## 6                                                                                  15.6
+##   Number.of.Patients...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure
+## 1                                                                             741
+## 2                                                                             234
+## 3                                                                             523
+## 4                                                                             113
+## 5                                                                              53
+## 6                                                                             163
+##   Footnote...Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure
+## 1                                                                      
+## 2                                                                      
+## 3                                                                      
+## 4                                                                      
+## 5                                                                      
+## 6                                                                      
+##   Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia
+## 1                                                   10.9
+## 2                                                   13.9
+## 3                                                   13.4
+## 4                                                   14.9
+## 5                                                   15.8
+## 6                                                    8.7
+##   Comparison.to.U.S..Rate...Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia
+## 1                                             No Different than U.S. National Rate
+## 2                                             No Different than U.S. National Rate
+## 3                                             No Different than U.S. National Rate
+## 4                                             No Different than U.S. National Rate
+## 5                                             No Different than U.S. National Rate
+## 6                                                   Better than U.S. National Rate
+##   Lower.Mortality.Estimate...Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia
+## 1                                                                               8.6
+## 2                                                                              11.3
+## 3                                                                              11.2
+## 4                                                                              11.6
+## 5                                                                              11.4
+## 6                                                                               6.8
+##   Upper.Mortality.Estimate...Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia
+## 1                                                                              13.7
+## 2                                                                              17.0
+## 3                                                                              15.8
+## 4                                                                              19.0
+## 5                                                                              21.5
+## 6                                                                              11.0
+##   Number.of.Patients...Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia
+## 1                                                                         371
+## 2                                                                         372
+## 3                                                                         836
+## 4                                                                         239
+## 5                                                                          61
+## 6                                                                         315
+##   Footnote...Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia
+## 1                                                                  
+## 2                                                                  
+## 3                                                                  
+## 4                                                                  
+## 5                                                                  
+## 6                                                                  
+##   Hospital.30.Day.Readmission.Rates.from.Heart.Attack
+## 1                                                19.0
+## 2                                       Not Available
+## 3                                                17.8
+## 4                                       Not Available
+## 5                                       Not Available
+## 6                                       Not Available
+##   Comparison.to.U.S..Rate...Hospital.30.Day.Readmission.Rates.from.Heart.Attack
+## 1                                          No Different than U.S. National Rate
+## 2                                                     Number of Cases Too Small
+## 3                                          No Different than U.S. National Rate
+## 4                                                     Number of Cases Too Small
+## 5                                                     Number of Cases Too Small
+## 6                                                     Number of Cases Too Small
+##   Lower.Readmission.Estimate...Hospital.30.Day.Readmission.Rates.from.Heart.Attack
+## 1                                                                             16.6
+## 2                                                                    Not Available
+## 3                                                                             14.9
+## 4                                                                    Not Available
+## 5                                                                    Not Available
+## 6                                                                    Not Available
+##   Upper.Readmission.Estimate...Hospital.30.Day.Readmission.Rates.from.Heart.Attack
+## 1                                                                             21.7
+## 2                                                                    Not Available
+## 3                                                                             21.5
+## 4                                                                    Not Available
+## 5                                                                    Not Available
+## 6                                                                    Not Available
+##   Number.of.Patients...Hospital.30.Day.Readmission.Rates.from.Heart.Attack
+## 1                                                                      728
+## 2                                                                       21
+## 3                                                                      342
+## 4                                                                        1
+## 5                                                                        4
+## 6                                                                       13
+##                                      Footnote...Hospital.30.Day.Readmission.Rates.from.Heart.Attack
+## 1                                                                                                  
+## 2 number of cases is too small (fewer than 25) to reliably tell how well the hospital is performing
+## 3                                                                                                  
+## 4 number of cases is too small (fewer than 25) to reliably tell how well the hospital is performing
+## 5 number of cases is too small (fewer than 25) to reliably tell how well the hospital is performing
+## 6 number of cases is too small (fewer than 25) to reliably tell how well the hospital is performing
+##   Hospital.30.Day.Readmission.Rates.from.Heart.Failure
+## 1                                                 23.7
+## 2                                                 22.5
+## 3                                                 19.8
+## 4                                                 27.1
+## 5                                                 24.7
+## 6                                                 23.9
+##   Comparison.to.U.S..Rate...Hospital.30.Day.Readmission.Rates.from.Heart.Failure
+## 1                                           No Different than U.S. National Rate
+## 2                                           No Different than U.S. National Rate
+## 3                                                 Better than U.S. National Rate
+## 4                                           No Different than U.S. National Rate
+## 5                                           No Different than U.S. National Rate
+## 6                                           No Different than U.S. National Rate
+##   Lower.Readmission.Estimate...Hospital.30.Day.Readmission.Rates.from.Heart.Failure
+## 1                                                                              21.3
+## 2                                                                              19.2
+## 3                                                                              17.2
+## 4                                                                              22.4
+## 5                                                                              19.9
+## 6                                                                              20.1
+##   Upper.Readmission.Estimate...Hospital.30.Day.Readmission.Rates.from.Heart.Failure
+## 1                                                                              26.5
+## 2                                                                              26.1
+## 3                                                                              22.9
+## 4                                                                              31.9
+## 5                                                                              30.2
+## 6                                                                              28.2
+##   Number.of.Patients...Hospital.30.Day.Readmission.Rates.from.Heart.Failure
+## 1                                                                       891
+## 2                                                                       264
+## 3                                                                       614
+## 4                                                                       135
+## 5                                                                        59
+## 6                                                                       173
+##   Footnote...Hospital.30.Day.Readmission.Rates.from.Heart.Failure
+## 1                                                                
+## 2                                                                
+## 3                                                                
+## 4                                                                
+## 5                                                                
+## 6                                                                
+##   Hospital.30.Day.Readmission.Rates.from.Pneumonia
+## 1                                             17.1
+## 2                                             17.6
+## 3                                             16.9
+## 4                                             19.4
+## 5                                             18.0
+## 6                                             18.7
+##   Comparison.to.U.S..Rate...Hospital.30.Day.Readmission.Rates.from.Pneumonia
+## 1                                       No Different than U.S. National Rate
+## 2                                       No Different than U.S. National Rate
+## 3                                       No Different than U.S. National Rate
+## 4                                       No Different than U.S. National Rate
+## 5                                       No Different than U.S. National Rate
+## 6                                       No Different than U.S. National Rate
+##   Lower.Readmission.Estimate...Hospital.30.Day.Readmission.Rates.from.Pneumonia
+## 1                                                                          14.4
+## 2                                                                          15.0
+## 3                                                                          14.7
+## 4                                                                          15.9
+## 5                                                                          14.0
+## 6                                                                          15.7
+##   Upper.Readmission.Estimate...Hospital.30.Day.Readmission.Rates.from.Pneumonia
+## 1                                                                          20.4
+## 2                                                                          20.6
+## 3                                                                          19.5
+## 4                                                                          23.2
+## 5                                                                          22.8
+## 6                                                                          22.2
+##   Number.of.Patients...Hospital.30.Day.Readmission.Rates.from.Pneumonia
+## 1                                                                   400
+## 2                                                                   374
+## 3                                                                   842
+## 4                                                                   254
+## 5                                                                    56
+## 6                                                                   326
+##   Footnote...Hospital.30.Day.Readmission.Rates.from.Pneumonia
+## 1                                                            
+## 2                                                            
+## 3                                                            
+## 4                                                            
+## 5                                                            
+## 6
+\end{verbatim}
+
+There are many columns in this dataset. You can see how many by typing
+ncol(outcome) (you can see the number of rows with the nrow function).
+In addition, you can see the names of each column by typing
+names(outcome) (the names are also in the PDF document. To make a simple
+histogram of the 30-day death rates from heart attack (column 11 in the
+outcome dataset), run
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{outcome[, }\DecValTok{11}\NormalTok{] }\OtherTok{\textless{}{-}} \FunctionTok{as.numeric}\NormalTok{(outcome[, }\DecValTok{11}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: NAs introduced by coercion
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{hist}\NormalTok{(outcome[, }\DecValTok{11}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{ProgrammingAssignment3_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\# You may get a warning about NAs being introduced; that is okay}
+\end{Highlighting}
+\end{Shaded}
+
+Because we originally read the data in as character (by specifying
+colClasses = ``character'' we need to coerce the column to be numeric.
+You may get a warning about NAs being introduced but that is okay.
+
+\subsection{2 Finding the best hospital in a
+state}\label{finding-the-best-hospital-in-a-state}
+
+Write a function called best that take two arguments: the 2-character
+abbreviated name of a state and an outcome name. The function reads the
+outcome-of-care-measures.csv file and returns a character vector with
+the name of the hospital that has the best (i.e.~lowest) 30-day
+mortality for the specified outcome in that state. The hospital name is
+the name provided in the Hospital.Name variable. The outcomes can be one
+of ``heart attack'', ``heart failure'', or ``pneumonia''. Hospitals that
+do not have data on a particular outcome should be excluded from the set
+of hospitals when deciding the rankings. Handling ties. If there is a
+tie for the best hospital for a given outcome, then the hospital names
+should be sorted in alphabetical order and the first hospital in that
+set should be chosen (i.e.~if hospitals ``b'', ``c'', and ``f'' are tied
+for best, then hospital ``b'' should be returned). The function should
+use the following template.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{best }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(state, outcome) \{}
+  \CommentTok{\# Read the outcome data}
+\NormalTok{  data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"ProgrammingAssignment3\_Data/outcome{-}of{-}care{-}measures.csv"}\NormalTok{, }\AttributeTok{colClasses =} \StringTok{"character"}\NormalTok{)}
+  
+  \CommentTok{\# Define valid outcomes and their corresponding column names in the data}
+\NormalTok{  valid\_outcomes }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"heart attack"}\NormalTok{, }\StringTok{"heart failure"}\NormalTok{, }\StringTok{"pneumonia"}\NormalTok{)}
+\NormalTok{  outcome\_column }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"heart attack"} \OtherTok{=} \StringTok{"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"}\NormalTok{,}
+                      \StringTok{"heart failure"} \OtherTok{=} \StringTok{"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"}\NormalTok{,}
+                      \StringTok{"pneumonia"} \OtherTok{=} \StringTok{"Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia"}\NormalTok{)}
+  
+  \CommentTok{\# Check if the provided outcome is valid}
+  \ControlFlowTok{if}\NormalTok{ (}\SpecialCharTok{!}\NormalTok{outcome }\SpecialCharTok{\%in\%}\NormalTok{ valid\_outcomes) \{}
+    \FunctionTok{stop}\NormalTok{(}\StringTok{"invalid outcome"}\NormalTok{)}
+\NormalTok{  \}}
+  
+  \CommentTok{\# Check if the provided state is valid}
+  \ControlFlowTok{if}\NormalTok{ (}\SpecialCharTok{!}\NormalTok{state }\SpecialCharTok{\%in\%} \FunctionTok{unique}\NormalTok{(data}\SpecialCharTok{$}\NormalTok{State)) \{}
+    \FunctionTok{stop}\NormalTok{(}\StringTok{"invalid state"}\NormalTok{)}
+\NormalTok{  \}}
+  
+  \CommentTok{\# Subset the data for the specified state and outcome}
+\NormalTok{  state\_data }\OtherTok{\textless{}{-}} \FunctionTok{subset}\NormalTok{(data, State }\SpecialCharTok{==}\NormalTok{ state)}
+\NormalTok{  outcome\_data }\OtherTok{\textless{}{-}}\NormalTok{ state\_data[, }\FunctionTok{c}\NormalTok{(}\StringTok{"Hospital.Name"}\NormalTok{, outcome\_column[outcome])]}
+  
+  \CommentTok{\# Convert the outcome data to numeric and remove rows with NA values}
+\NormalTok{  outcome\_data[, }\DecValTok{2}\NormalTok{] }\OtherTok{\textless{}{-}} \FunctionTok{as.numeric}\NormalTok{(outcome\_data[, }\DecValTok{2}\NormalTok{])}
+\NormalTok{  outcome\_data }\OtherTok{\textless{}{-}} \FunctionTok{na.omit}\NormalTok{(outcome\_data)}
+  
+  \CommentTok{\# Find the hospital with the lowest 30{-}day mortality rate}
+\NormalTok{  min\_value }\OtherTok{\textless{}{-}} \FunctionTok{min}\NormalTok{(outcome\_data[, }\DecValTok{2}\NormalTok{])}
+\NormalTok{  best\_hospitals }\OtherTok{\textless{}{-}}\NormalTok{ outcome\_data[outcome\_data[, }\DecValTok{2}\NormalTok{] }\SpecialCharTok{==}\NormalTok{ min\_value, }\StringTok{"Hospital.Name"}\NormalTok{]}
+  
+  \CommentTok{\# Return the hospital name, sorted alphabetically in case of ties}
+\NormalTok{  best\_hospital }\OtherTok{\textless{}{-}} \FunctionTok{sort}\NormalTok{(best\_hospitals)[}\DecValTok{1}\NormalTok{]}
+  \FunctionTok{return}\NormalTok{(best\_hospital)}
+\NormalTok{\}}
+
+\CommentTok{\# Example usage:}
+\FunctionTok{best}\NormalTok{(}\StringTok{"TX"}\NormalTok{, }\StringTok{"heart attack"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in best("TX", "heart attack"): NAs introduced by coercion
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "CYPRESS FAIRBANKS MEDICAL CENTER"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{best}\NormalTok{(}\StringTok{"TX"}\NormalTok{, }\StringTok{"heart failure"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in best("TX", "heart failure"): NAs introduced by coercion
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "FORT DUNCAN MEDICAL CENTER"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{best}\NormalTok{(}\StringTok{"MD"}\NormalTok{, }\StringTok{"heart attack"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in best("MD", "heart attack"): NAs introduced by coercion
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "JOHNS HOPKINS HOSPITAL, THE"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{best}\NormalTok{(}\StringTok{"MD"}\NormalTok{, }\StringTok{"pneumonia"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "GREATER BALTIMORE MEDICAL CENTER"
+\end{verbatim}
+
+\subsection{3 Ranking hospitals by outcome in a
+state}\label{ranking-hospitals-by-outcome-in-a-state}
+
+Write a function called rankhospital that takes three arguments: the
+2-character abbreviated name of a state (state), an outcome (outcome),
+and the ranking of a hospital in that state for that outcome (num). The
+function reads the outcome-of-care-measures.csv file and returns a
+character vector with the name of the hospital that has the ranking
+specified by the num argument. For example, the call
+
+rankhospital(``MD'', ``heart failure'', 5)
+
+would return a character vector containing the name of the hospital with
+the 5th lowest 30-day death rate for heart failure. The num argument can
+take values ``best'', ``worst'', or an integer indicating the ranking
+(smaller numbers are better). If the number given by num is larger than
+the number of hospitals in that state, then the function should return
+NA. Hospitals that do not have data on a particular outcome should be
+excluded from the set of hospitals when deciding the rankings.
+
+Handling ties. It may occur that multiple hospitals have the same 30-day
+mortality rate for a given cause of death. In those cases ties should be
+broken by using the hospital name. For example, in Texas (``TX''), the
+hospitals with lowest 30-day mortality rate for heart failure are shown
+here.
+
+head(texas) Hospital.Name Rate Rank 3935 FORT DUNCAN MEDICAL CENTER 8.1
+1 4085 TOMBALL REGIONAL MEDICAL CENTER 8.5 2 4103 CYPRESS FAIRBANKS
+MEDICAL CENTER 8.7 3 3954 DETAR HOSPITAL NAVARRO 8.7 4 4010 METHODIST
+HOSPITAL,THE 8.8 5 3962 MISSION REGIONAL MEDICAL CENTER 8.8 6 Note that
+Cypress Fairbanks Medical Center and Detar Hospital Navarro both have
+the same 30-day rate (8.7). However, because Cypress comes before Detar
+alphabetically, Cypress is ranked number 3 in this scheme and Detar is
+ranked number 4. One can use the order function to sort multiple vectors
+in this manner (i.e.~where one vector is used to break ties in another
+vector). The function should use the following template.
+
+rankhospital \textless- function(state, outcome, num = ``best'') \{ Read
+outcome data Check that state and outcome are valid Return hospital name
+in that state with the given rank 30-day death rate \}
+
+The function should check the validity of its arguments. If an invalid
+state value is passed to rankhospital, the function should throw an
+error via the stop function with the exact message ``invalid state''. If
+an invalid outcome value is passed to rankhospital, the function should
+throw an error via the stop function with the exact message ``invalid
+outcome''. Here is some sample output from the function.
+source(``rankhospital.R'') rankhospital(``TX'', ``heart failure'', 4)
+{[}1{]} ``DETAR HOSPITAL NAVARRO'' rankhospital(``MD'', ``heart
+attack'', ``worst'') 3 {[}1{]} ``HARFORD MEMORIAL HOSPITAL''
+rankhospital(``MN'', ``heart attack'', 5000) {[}1{]} NA Save your code
+for this function to a file named rankhospital.R
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{rankhospital }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(state, outcome, }\AttributeTok{num =} \StringTok{"best"}\NormalTok{) \{}
+  \CommentTok{\# Read the outcome data}
+\NormalTok{  data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"ProgrammingAssignment3\_Data/outcome{-}of{-}care{-}measures.csv"}\NormalTok{, }\AttributeTok{colClasses =} \StringTok{"character"}\NormalTok{)}
+  
+  \CommentTok{\# Define valid outcomes and their corresponding column names in the data}
+\NormalTok{  valid\_outcomes }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"heart attack"}\NormalTok{, }\StringTok{"heart failure"}\NormalTok{, }\StringTok{"pneumonia"}\NormalTok{)}
+\NormalTok{  outcome\_column }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"heart attack"} \OtherTok{=} \StringTok{"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"}\NormalTok{,}
+                      \StringTok{"heart failure"} \OtherTok{=} \StringTok{"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"}\NormalTok{,}
+                      \StringTok{"pneumonia"} \OtherTok{=} \StringTok{"Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia"}\NormalTok{)}
+  
+  \CommentTok{\# Check if the provided outcome is valid}
+  \ControlFlowTok{if}\NormalTok{ (}\SpecialCharTok{!}\NormalTok{outcome }\SpecialCharTok{\%in\%}\NormalTok{ valid\_outcomes) \{}
+    \FunctionTok{stop}\NormalTok{(}\StringTok{"invalid outcome"}\NormalTok{)}
+\NormalTok{  \}}
+  
+  \CommentTok{\# Check if the provided state is valid}
+  \ControlFlowTok{if}\NormalTok{ (}\SpecialCharTok{!}\NormalTok{state }\SpecialCharTok{\%in\%} \FunctionTok{unique}\NormalTok{(data}\SpecialCharTok{$}\NormalTok{State)) \{}
+    \FunctionTok{stop}\NormalTok{(}\StringTok{"invalid state"}\NormalTok{)}
+\NormalTok{  \}}
+  
+  \CommentTok{\# Subset the data for the specified state and outcome}
+\NormalTok{  state\_data }\OtherTok{\textless{}{-}} \FunctionTok{subset}\NormalTok{(data, State }\SpecialCharTok{==}\NormalTok{ state)}
+\NormalTok{  outcome\_data }\OtherTok{\textless{}{-}}\NormalTok{ state\_data[, }\FunctionTok{c}\NormalTok{(}\StringTok{"Hospital.Name"}\NormalTok{, outcome\_column[outcome])]}
+  
+  \CommentTok{\# Convert the outcome data to numeric and remove rows with NA values}
+\NormalTok{  outcome\_data[, }\DecValTok{2}\NormalTok{] }\OtherTok{\textless{}{-}} \FunctionTok{as.numeric}\NormalTok{(outcome\_data[, }\DecValTok{2}\NormalTok{])}
+\NormalTok{  outcome\_data }\OtherTok{\textless{}{-}} \FunctionTok{na.omit}\NormalTok{(outcome\_data)}
+  
+  \CommentTok{\# Order the data by outcome and hospital name (to handle ties)}
+\NormalTok{  outcome\_data }\OtherTok{\textless{}{-}}\NormalTok{ outcome\_data[}\FunctionTok{order}\NormalTok{(outcome\_data[, }\DecValTok{2}\NormalTok{], outcome\_data[, }\DecValTok{1}\NormalTok{]), ]}
+  
+  \CommentTok{\# Determine the ranking}
+  \ControlFlowTok{if}\NormalTok{ (num }\SpecialCharTok{==} \StringTok{"best"}\NormalTok{) \{}
+\NormalTok{    rank }\OtherTok{\textless{}{-}} \DecValTok{1}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{ (num }\SpecialCharTok{==} \StringTok{"worst"}\NormalTok{) \{}
+\NormalTok{    rank }\OtherTok{\textless{}{-}} \FunctionTok{nrow}\NormalTok{(outcome\_data)}
+\NormalTok{  \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{ (}\FunctionTok{is.numeric}\NormalTok{(num) }\SpecialCharTok{\&\&}\NormalTok{ num }\SpecialCharTok{\textgreater{}} \DecValTok{0} \SpecialCharTok{\&\&}\NormalTok{ num }\SpecialCharTok{\textless{}=} \FunctionTok{nrow}\NormalTok{(outcome\_data)) \{}
+\NormalTok{    rank }\OtherTok{\textless{}{-}}\NormalTok{ num}
+\NormalTok{  \} }\ControlFlowTok{else}\NormalTok{ \{}
+    \FunctionTok{return}\NormalTok{(}\ConstantTok{NA}\NormalTok{)}
+\NormalTok{  \}}
+  
+  \CommentTok{\# Return the hospital name with the given rank}
+  \FunctionTok{return}\NormalTok{(outcome\_data[rank, }\StringTok{"Hospital.Name"}\NormalTok{])}
+\NormalTok{\}}
+
+\CommentTok{\# Example usage:}
+\FunctionTok{rankhospital}\NormalTok{(}\StringTok{"TX"}\NormalTok{, }\StringTok{"heart failure"}\NormalTok{, }\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in rankhospital("TX", "heart failure", 4): NAs introduced by coercion
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "DETAR HOSPITAL NAVARRO"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{rankhospital}\NormalTok{(}\StringTok{"MD"}\NormalTok{, }\StringTok{"heart attack"}\NormalTok{, }\StringTok{"worst"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in rankhospital("MD", "heart attack", "worst"): NAs introduced by
+## coercion
+\end{verbatim}
+
+\begin{verbatim}
+## [1] "HARFORD MEMORIAL HOSPITAL"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{rankhospital}\NormalTok{(}\StringTok{"MN"}\NormalTok{, }\StringTok{"heart attack"}\NormalTok{, }\DecValTok{5000}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in rankhospital("MN", "heart attack", 5000): NAs introduced by coercion
+\end{verbatim}
+
+\begin{verbatim}
+## [1] NA
+\end{verbatim}
+
+\subsection{4 Ranking hospitals in all
+states}\label{ranking-hospitals-in-all-states}
+
+Write a function called rankall that takes two arguments: an outcome
+name (outcome) and a hospital ranking (num). The function reads the
+outcome-of-care-measures.csv file and returns a 2-column data frame
+containing the hospital in each state that has the ranking specified in
+num. For example the function call rankall(``heart attack'', ``best'')
+would return a data frame containing the names of the hospitals that are
+the best in their respective states for 30-day heart attack death rates.
+The function should return a value for every state (some may be NA). The
+first column in the data frame is named hospital, which contains the
+hospital name, and the second column is named state, which contains the
+2-character abbreviation for the state name. Hospitals that do not have
+data on a particular outcome should be excluded from the set of
+hospitals when deciding the rankings. Handling ties. The rankall
+function should handle ties in the 30-day mortality rates in the same
+way that the rankhospital function handles ties. The function should use
+the following template.
+
+rankall \textless- function(outcome, num = ``best'') \{ Read outcome
+data Check that state and outcome are valid For each state, find the
+hospital of the given rank Return a data frame with the hospital names
+and the (abbreviated) state name \}
+
+NOTE: For the purpose of this part of the assignment (and for
+efficiency), your function should NOT call the rankhospital function
+from the previous section. The function should check the validity of its
+arguments. If an invalid outcome value is passed to rankall, the
+function should throw an error via the stop function with the exact
+message ``invalid outcome''. The num variable can take values ``best'',
+``worst'', or an integer indicating the ranking (smaller numbers are
+better). If the number given by num is larger than the number of
+hospitals in that state, then the function should return NA.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{rankall }\OtherTok{\textless{}{-}} \ControlFlowTok{function}\NormalTok{(outcome, }\AttributeTok{num =} \StringTok{"best"}\NormalTok{) \{}
+  \CommentTok{\# Read the outcome data}
+\NormalTok{  data }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"ProgrammingAssignment3\_Data/outcome{-}of{-}care{-}measures.csv"}\NormalTok{, }\AttributeTok{colClasses =} \StringTok{"character"}\NormalTok{)}
+  
+  \CommentTok{\# Define valid outcomes and their corresponding column names in the data}
+\NormalTok{  valid\_outcomes }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"heart attack"}\NormalTok{, }\StringTok{"heart failure"}\NormalTok{, }\StringTok{"pneumonia"}\NormalTok{)}
+\NormalTok{  outcome\_column }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"heart attack"} \OtherTok{=} \StringTok{"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack"}\NormalTok{,}
+                      \StringTok{"heart failure"} \OtherTok{=} \StringTok{"Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure"}\NormalTok{,}
+                      \StringTok{"pneumonia"} \OtherTok{=} \StringTok{"Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia"}\NormalTok{)}
+  
+  \CommentTok{\# Check if the provided outcome is valid}
+  \ControlFlowTok{if}\NormalTok{ (}\SpecialCharTok{!}\NormalTok{outcome }\SpecialCharTok{\%in\%}\NormalTok{ valid\_outcomes) \{}
+    \FunctionTok{stop}\NormalTok{(}\StringTok{"invalid outcome"}\NormalTok{)}
+\NormalTok{  \}}
+  
+  \CommentTok{\# Initialize an empty data frame for the results}
+\NormalTok{  results }\OtherTok{\textless{}{-}} \FunctionTok{data.frame}\NormalTok{(}\AttributeTok{hospital =} \FunctionTok{character}\NormalTok{(), }\AttributeTok{state =} \FunctionTok{character}\NormalTok{(), }\AttributeTok{stringsAsFactors =} \ConstantTok{FALSE}\NormalTok{)}
+  
+  \CommentTok{\# Get the list of states}
+\NormalTok{  states }\OtherTok{\textless{}{-}} \FunctionTok{unique}\NormalTok{(data}\SpecialCharTok{$}\NormalTok{State)}
+  
+  \CommentTok{\# Loop over each state to find the hospital of the given rank}
+  \ControlFlowTok{for}\NormalTok{ (state }\ControlFlowTok{in}\NormalTok{ states) \{}
+    \CommentTok{\# Subset the data for the specified state and outcome}
+\NormalTok{    state\_data }\OtherTok{\textless{}{-}} \FunctionTok{subset}\NormalTok{(data, State }\SpecialCharTok{==}\NormalTok{ state)}
+\NormalTok{    outcome\_data }\OtherTok{\textless{}{-}}\NormalTok{ state\_data[, }\FunctionTok{c}\NormalTok{(}\StringTok{"Hospital.Name"}\NormalTok{, outcome\_column[outcome])]}
+    
+    \CommentTok{\# Convert the outcome data to numeric and remove rows with NA values}
+\NormalTok{    outcome\_data[, }\DecValTok{2}\NormalTok{] }\OtherTok{\textless{}{-}} \FunctionTok{suppressWarnings}\NormalTok{(}\FunctionTok{as.numeric}\NormalTok{(outcome\_data[, }\DecValTok{2}\NormalTok{]))}
+\NormalTok{    outcome\_data }\OtherTok{\textless{}{-}} \FunctionTok{na.omit}\NormalTok{(outcome\_data)}
+    
+    \CommentTok{\# Order the data by outcome and hospital name (to handle ties)}
+\NormalTok{    outcome\_data }\OtherTok{\textless{}{-}}\NormalTok{ outcome\_data[}\FunctionTok{order}\NormalTok{(outcome\_data[, }\DecValTok{2}\NormalTok{], outcome\_data[, }\DecValTok{1}\NormalTok{]), ]}
+    
+    \CommentTok{\# Determine the ranking}
+    \ControlFlowTok{if}\NormalTok{ (num }\SpecialCharTok{==} \StringTok{"best"}\NormalTok{) \{}
+\NormalTok{      rank }\OtherTok{\textless{}{-}} \DecValTok{1}
+\NormalTok{    \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{ (num }\SpecialCharTok{==} \StringTok{"worst"}\NormalTok{) \{}
+\NormalTok{      rank }\OtherTok{\textless{}{-}} \FunctionTok{nrow}\NormalTok{(outcome\_data)}
+\NormalTok{    \} }\ControlFlowTok{else} \ControlFlowTok{if}\NormalTok{ (}\FunctionTok{is.numeric}\NormalTok{(}\FunctionTok{as.numeric}\NormalTok{(num)) }\SpecialCharTok{\&\&} \FunctionTok{as.numeric}\NormalTok{(num) }\SpecialCharTok{\textgreater{}} \DecValTok{0} \SpecialCharTok{\&\&} \FunctionTok{as.numeric}\NormalTok{(num) }\SpecialCharTok{\textless{}=} \FunctionTok{nrow}\NormalTok{(outcome\_data)) \{}
+\NormalTok{      rank }\OtherTok{\textless{}{-}} \FunctionTok{as.numeric}\NormalTok{(num)}
+\NormalTok{    \} }\ControlFlowTok{else}\NormalTok{ \{}
+\NormalTok{      rank }\OtherTok{\textless{}{-}} \ConstantTok{NA}
+\NormalTok{    \}}
+    
+    \CommentTok{\# Get the hospital name with the given rank or NA if the rank is not valid}
+\NormalTok{    hospital }\OtherTok{\textless{}{-}} \ControlFlowTok{if}\NormalTok{ (}\SpecialCharTok{!}\FunctionTok{is.na}\NormalTok{(rank) }\SpecialCharTok{\&\&}\NormalTok{ rank }\SpecialCharTok{\textless{}=} \FunctionTok{nrow}\NormalTok{(outcome\_data)) \{}
+\NormalTok{      outcome\_data[rank, }\StringTok{"Hospital.Name"}\NormalTok{]}
+\NormalTok{    \} }\ControlFlowTok{else}\NormalTok{ \{}
+      \ConstantTok{NA}
+\NormalTok{    \}}
+    
+    \CommentTok{\# Append the result to the results data frame}
+\NormalTok{    results }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(results, }\FunctionTok{data.frame}\NormalTok{(}\AttributeTok{hospital =}\NormalTok{ hospital, }\AttributeTok{state =}\NormalTok{ state))}
+\NormalTok{  \}}
+  
+  \FunctionTok{return}\NormalTok{(results)}
+\NormalTok{\}}
+
+\CommentTok{\# Example usage:}
+\FunctionTok{head}\NormalTok{(}\FunctionTok{rankall}\NormalTok{(}\StringTok{"heart attack"}\NormalTok{, }\DecValTok{20}\NormalTok{), }\DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                               hospital state
+## 1       D W MCMILLAN MEMORIAL HOSPITAL    AL
+## 2                                 <NA>    AK
+## 3  JOHN C LINCOLN DEER VALLEY HOSPITAL    AZ
+## 4    ARKANSAS METHODIST MEDICAL CENTER    AR
+## 5                SHERMAN OAKS HOSPITAL    CA
+## 6             SKY RIDGE MEDICAL CENTER    CO
+## 7              MIDSTATE MEDICAL CENTER    CT
+## 8                                 <NA>    DE
+## 9                                 <NA>    DC
+## 10      SOUTH FLORIDA BAPTIST HOSPITAL    FL
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(}\FunctionTok{rankall}\NormalTok{(}\StringTok{"heart attack"}\NormalTok{, }\DecValTok{20}\NormalTok{), }\DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                               hospital state
+## 1       D W MCMILLAN MEMORIAL HOSPITAL    AL
+## 2                                 <NA>    AK
+## 3  JOHN C LINCOLN DEER VALLEY HOSPITAL    AZ
+## 4    ARKANSAS METHODIST MEDICAL CENTER    AR
+## 5                SHERMAN OAKS HOSPITAL    CA
+## 6             SKY RIDGE MEDICAL CENTER    CO
+## 7              MIDSTATE MEDICAL CENTER    CT
+## 8                                 <NA>    DE
+## 9                                 <NA>    DC
+## 10      SOUTH FLORIDA BAPTIST HOSPITAL    FL
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{tail}\NormalTok{(}\FunctionTok{rankall}\NormalTok{(}\StringTok{"pneumonia"}\NormalTok{, }\StringTok{"worst"}\NormalTok{), }\DecValTok{3}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                                      hospital state
+## 52 MAYO CLINIC HEALTH SYSTEM - NORTHLAND, INC    WI
+## 53           NORTH BIG HORN HOSPITAL DISTRICT    WY
+## 54           GUAM MEMORIAL HOSPITAL AUTHORITY    GU
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{tail}\NormalTok{(}\FunctionTok{rankall}\NormalTok{(}\StringTok{"heart failure"}\NormalTok{), }\DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##                                                             hospital state
+## 45                                        FORT DUNCAN MEDICAL CENTER    TX
+## 46 VA SALT LAKE CITY HEALTHCARE - GEORGE E. WAHLEN VA MEDICAL CENTER    UT
+## 47                                              SPRINGFIELD HOSPITAL    VT
+## 48                            GOV JUAN F LUIS HOSPITAL & MEDICAL CTR    VI
+## 49                                          SENTARA POTOMAC HOSPITAL    VA
+## 50                                         HARBORVIEW MEDICAL CENTER    WA
+## 51                                         FAIRMONT GENERAL HOSPITAL    WV
+## 52                                    AURORA ST LUKES MEDICAL CENTER    WI
+## 53                                        CHEYENNE VA MEDICAL CENTER    WY
+## 54                                  GUAM MEMORIAL HOSPITAL AUTHORITY    GU
+\end{verbatim}
+
+\end{document}

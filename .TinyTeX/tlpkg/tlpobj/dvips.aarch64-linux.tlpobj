@@ -1,0 +1,9 @@
+name dvips.aarch64-linux
+category TLCore
+revision 70276
+shortdesc aarch64-linux files of dvips
+containersize 144968
+containerchecksum ac7b6410d8eb591a0dbde9e05bca58e6f5264bcfa6c97a9ed8275ee51bf24c77953a45dfa3f66945480cecf2ba24a90c46b42be8041654dd118c14306a176082
+binfiles arch=aarch64-linux size=107
+ bin/aarch64-linux/afm2tfm
+ bin/aarch64-linux/dvips

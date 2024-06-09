@@ -1,0 +1,77 @@
+name hyperref
+category Package
+revision 71338
+shortdesc Extensive support for hypertext in LaTeX
+longdesc The hyperref package is used to handle cross-referencing
+longdesc commands in LaTeX to produce hypertext links in the document.
+longdesc The package provides backends for the \special set defined for
+longdesc HyperTeX DVI processors; for embedded pdfmark commands for
+longdesc processing by Acrobat Distiller (dvips and Y&Y's dvipsone); for
+longdesc Y&Y's dviwindo; for PDF control within pdfTeX and dvipdfm; for
+longdesc TeX4ht; and for VTeX's pdf and HTML backends. The package is
+longdesc distributed with the backref and nameref packages, which make
+longdesc use of the facilities of hyperref. The package depends on the
+longdesc author's kvoptions, ltxcmds and refcount packages.
+depend atbegshi
+depend auxhook
+depend bitset
+depend etexcmds
+depend gettitlestring
+depend hycolor
+depend iftex
+depend infwarerr
+depend intcalc
+depend kvdefinekeys
+depend kvoptions
+depend kvsetkeys
+depend letltxmacro
+depend ltxcmds
+depend pdfescape
+depend pdftexcmds
+depend refcount
+depend rerunfilecheck
+depend stringenc
+depend url
+depend zapfding
+containersize 88400
+containerchecksum 07845d02bb7e9dac2e3c889f96285ddc9acb59f4e4e36d4be214bd5c9497b0b4468b3b14436d147584377b0930bea1a15ed35c81bfc723e8e2aa7d0cdfbca763
+doccontainersize 3960536
+doccontainerchecksum 848150ae001968a44d09a54539d8caee65e249276ea48eb446b5938ddf5b8c16f6f8f035d13194e548cfc57fcedcee2476bb74da79748082c8454371aa3613af
+srccontainersize 417584
+srccontainerchecksum b2f2b40f48fe95118f1e25f99843e8bd7428ced2c9b3fdd2fea913a8e3121a6dad140e5062ff752b10f1bd81bc5105088c8eda54388735b79f35c1e0b1534d6e
+runfiles size=199
+ texmf-dist/tex/latex/hyperref/backref.sty
+ texmf-dist/tex/latex/hyperref/hdvipdfm.def
+ texmf-dist/tex/latex/hyperref/hdvips.def
+ texmf-dist/tex/latex/hyperref/hdvipson.def
+ texmf-dist/tex/latex/hyperref/hdviwind.def
+ texmf-dist/tex/latex/hyperref/hluatex.def
+ texmf-dist/tex/latex/hyperref/hpdftex.def
+ texmf-dist/tex/latex/hyperref/htex4ht.cfg
+ texmf-dist/tex/latex/hyperref/htex4ht.def
+ texmf-dist/tex/latex/hyperref/htexture.def
+ texmf-dist/tex/latex/hyperref/hvtex.def
+ texmf-dist/tex/latex/hyperref/hvtexhtm.def
+ texmf-dist/tex/latex/hyperref/hvtexmrk.def
+ texmf-dist/tex/latex/hyperref/hxetex.def
+ texmf-dist/tex/latex/hyperref/hyperref-patches.sty
+ texmf-dist/tex/latex/hyperref/hyperref.sty
+ texmf-dist/tex/latex/hyperref/hypertex.def
+ texmf-dist/tex/latex/hyperref/minitoc-hyper.sty
+ texmf-dist/tex/latex/hyperref/nameref.sty
+ texmf-dist/tex/latex/hyperref/nohyperref.sty
+ texmf-dist/tex/latex/hyperref/ntheorem-hyper.sty
+ texmf-dist/tex/latex/hyperref/pd1enc.def
+ texmf-dist/tex/latex/hyperref/pdfmark.def
+ texmf-dist/tex/latex/hyperref/psdextra.def
+ texmf-dist/tex/latex/hyperref/puarenc.def
+ texmf-dist/tex/latex/hyperref/puenc-extra.def
+ texmf-dist/tex/latex/hyperref/puenc.def
+ texmf-dist/tex/latex/hyperref/puvnenc.def
+ texmf-dist/tex/latex/hyperref/xr-hyper.sty
+catalogue-contact-bugs https://github.com/latex3/hyperref/issues
+catalogue-contact-home https://github.com/latex3/hyperref
+catalogue-ctan /macros/latex/contrib/hyperref
+catalogue-license lppl1.3
+catalogue-topics hyper pdf-feat adobe-distiller form-fillin etex
+catalogue-version 7.01i

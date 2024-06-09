@@ -1,0 +1,7251 @@
+"0","if(!is.element('dplyr', installed.packages()[,1])){install.packages('dplyr',dependencies = T)}"
+"0","if(!is.element('gt', installed.packages()[,1])){install.packages('gt',dependencies = T)}"
+"2","Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+"
+"2","also installing the dependencies ‘AsioHeaders’, ‘lazyeval’, ‘websocket’, ‘V8’, ‘reactR’, ‘rex’, ‘timechange’, ‘Rcpp’, ‘prismatic’, ‘rstudioapi’, ‘selectr’, ‘httpuv’, ‘xtable’, ‘sourcetools’, ‘later’, ‘promises’, ‘purrr’, ‘cpp11’, ‘chromote’, ‘bigD’, ‘commonmark’, ‘htmlwidgets’, ‘juicyjuice’, ‘markdown’, ‘reactable’, ‘xml2’, ‘covr’, ‘lubridate’, ‘magick’, ‘paletteer’, ‘rvest’, ‘shiny’, ‘tidyr’, ‘webshot2’
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/AsioHeaders_1.22.1-2.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 720278 bytes (703 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 703 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/lazyeval_0.2.2.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 83462 bytes (81 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 81 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/websocket_1.4.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 199671 bytes (194 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 194 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/V8_4.4.2.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 671551 bytes (655 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 655 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/reactR_0.5.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 724147 bytes (707 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 707 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/rex_1.2.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 93156 bytes (90 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 90 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/timechange_0.3.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 103720 bytes (101 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 101 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/Rcpp_1.0.12.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 3430499 bytes (3.3 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 3.3 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/prismatic_1.1.2.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 659515 bytes (644 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 644 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/rstudioapi_0.16.0.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 116186 bytes (113 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 113 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/selectr_0.4-2.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 41456 bytes (40 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 40 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/httpuv_1.6.15.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 1886279 bytes (1.8 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.8 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/xtable_1.8-4.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 565397 bytes (552 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 552 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/sourcetools_0.1.7-1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 24258 bytes (23 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 23 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/later_1.3.2.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 62179 bytes (60 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 60 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/promises_1.3.0.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 3173731 bytes (3.0 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 3.0 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/purrr_1.0.2.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 218458 bytes (213 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 213 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/cpp11_0.4.7.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 285348 bytes (278 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 278 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/chromote_0.2.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 105230 bytes (102 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 102 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/bigD_0.2.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 1310868 bytes (1.3 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.3 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/commonmark_1.9.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 146414 bytes (142 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 142 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/htmlwidgets_1.6.4.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 862460 bytes (842 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 842 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/juicyjuice_0.1.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 1121794 bytes (1.1 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.1 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/markdown_1.12.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 113819 bytes (111 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 111 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/reactable_0.4.4.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 982203 bytes (959 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 959 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/xml2_1.3.6.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 294719 bytes (287 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 287 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/covr_3.6.4.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 163842 bytes (160 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 160 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/lubridate_1.9.3.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 429025 bytes (418 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 418 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/magick_2.8.3.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 4577823 bytes (4.4 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 4.4 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/paletteer_1.6.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 2485949 bytes (2.4 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.4 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/rvest_1.0.4.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 117242 bytes (114 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 114 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/shiny_1.8.1.1.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 3045720 bytes (2.9 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.9 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/tidyr_1.3.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 804973 bytes (786 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 786 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/webshot2_0.1.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 1774184 bytes (1.7 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.7 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/gt_0.10.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 2250326 bytes (2.1 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.1 MB
+
+"
+"2","* installing *source* package ‘AsioHeaders’ ...
+"
+"2","** package ‘AsioHeaders’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** inst
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (AsioHeaders)
+"
+"2","* installing *source* package ‘lazyeval’ ...
+"
+"2","** package ‘lazyeval’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c expr.c -o expr.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c interp.c -o interp.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c lazy.c -o lazy.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c name.c -o name.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.c -o utils.o
+"
+"1","gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o lazyeval.so expr.o init.o interp.o lazy.o name.o utils.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-lazyeval/00new/lazyeval/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (lazyeval)
+"
+"2","* installing *source* package ‘reactR’ ...
+"
+"2","** package ‘reactR’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (reactR)
+"
+"2","* installing *source* package ‘Rcpp’ ...
+"
+"2","** package ‘Rcpp’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I../inst/include/  -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c api.cpp -o api.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I../inst/include/  -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c attributes.cpp -o attributes.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I../inst/include/  -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c barrier.cpp -o barrier.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I../inst/include/  -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c date.cpp -o date.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I../inst/include/  -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c module.cpp -o module.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I../inst/include/  -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c rcpp_init.cpp -o rcpp_init.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o Rcpp.so api.o attributes.o barrier.o date.o module.o rcpp_init.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-Rcpp/00new/Rcpp/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (Rcpp)
+"
+"2","* installing *source* package ‘prismatic’ ...
+"
+"2","** package ‘prismatic’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (prismatic)
+"
+"2","* installing *source* package ‘rstudioapi’ ...
+"
+"2","** package ‘rstudioapi’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (rstudioapi)
+"
+"2","* installing *source* package ‘selectr’ ...
+"
+"2","** package ‘selectr’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (selectr)
+"
+"2","* installing *source* package ‘xtable’ ...
+"
+"2","** package ‘xtable’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** data
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (xtable)
+"
+"2","* installing *source* package ‘sourcetools’ ...
+"
+"2","** package ‘sourcetools’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I../inst/include  -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Reader.cpp -o Reader.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I../inst/include  -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Tokenizer.cpp -o Tokenizer.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -I../inst/include  -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sourcetools-init.c -o sourcetools-init.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o sourcetools.so Reader.o Tokenizer.o sourcetools-init.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-sourcetools/00new/sourcetools/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (sourcetools)
+"
+"2","* installing *source* package ‘purrr’ ...
+"
+"2","** package ‘purrr’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c backports.c -o backports.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cleancall.c -o cleancall.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c coerce.c -o coerce.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c conditions.c -o conditions.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c flatten.c -o flatten.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c map.c -o map.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c pluck.c -o pluck.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c transpose.c -o transpose.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cli/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.c -o utils.o
+"
+"1","gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o purrr.so backports.o cleancall.o coerce.o conditions.o flatten.o init.o map.o pluck.o transpose.o utils.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-purrr/00new/purrr/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (purrr)
+"
+"2","* installing *source* package ‘cpp11’ ...
+"
+"2","** package ‘cpp11’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (cpp11)
+"
+"2","* installing *source* package ‘bigD’ ...
+"
+"2","** package ‘bigD’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (bigD)
+"
+"2","* installing *source* package ‘commonmark’ ...
+"
+"2","** package ‘commonmark’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","rm -f cmark/cmark.o cmark/node.o cmark/iterator.o cmark/blocks.o cmark/inlines.o cmark/scanners.o cmark/utf8.o cmark/buffer.o cmark/references.o cmark/render.o cmark/man.o cmark/xml.o cmark/html.o cmark/commonmark.o cmark/latex.o cmark/houdini_href_e.o cmark/houdini_html_e.o cmark/houdini_html_u.o cmark/cmark_ctype.o cmark/arena.o cmark/linked_list.o cmark/plugin.o cmark/registry.o cmark/syntax_extension.o cmark/plaintext.o cmark/footnotes.o cmark/map.o extensions/autolink.o extensions/core-extensions.o extensions/ext_scanners.o extensions/strikethrough.o extensions/table.o extensions/tagfilter.o extensions/tasklist.o extensions.o init.o wrapper.o commonmark.so cmark/libstatcmark.a
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extensions.c -o extensions.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c wrapper.c -o wrapper.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/cmark.c -o cmark/cmark.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/node.c -o cmark/node.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/iterator.c -o cmark/iterator.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/blocks.c -o cmark/blocks.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/inlines.c -o cmark/inlines.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/scanners.c -o cmark/scanners.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/utf8.c -o cmark/utf8.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/buffer.c -o cmark/buffer.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/references.c -o cmark/references.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/render.c -o cmark/render.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/man.c -o cmark/man.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/xml.c -o cmark/xml.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/html.c -o cmark/html.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/commonmark.c -o cmark/commonmark.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/latex.c -o cmark/latex.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/houdini_href_e.c -o cmark/houdini_href_e.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/houdini_html_e.c -o cmark/houdini_html_e.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/houdini_html_u.c -o cmark/houdini_html_u.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/cmark_ctype.c -o cmark/cmark_ctype.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/arena.c -o cmark/arena.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/linked_list.c -o cmark/linked_list.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/plugin.c -o cmark/plugin.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/registry.c -o cmark/registry.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/syntax_extension.c -o cmark/syntax_extension.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/plaintext.c -o cmark/plaintext.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/footnotes.c -o cmark/footnotes.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmark/map.c -o cmark/map.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extensions/autolink.c -o extensions/autolink.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extensions/core-extensions.c -o extensions/core-extensions.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extensions/ext_scanners.c -o extensions/ext_scanners.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extensions/strikethrough.c -o extensions/strikethrough.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extensions/table.c -o extensions/table.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extensions/tagfilter.c -o extensions/tagfilter.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Icmark -I. -DCMARK_GFM_STATIC_DEFINE -DCMARK_GFM_EXTENSIONS_STATIC_DEFINE -DR_NO_REMAP -DSTRICT_R_HEADERS  -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c extensions/tasklist.c -o extensions/tasklist.o
+"
+"1","ar rcs cmark/libstatcmark.a cmark/cmark.o cmark/node.o cmark/iterator.o cmark/blocks.o cmark/inlines.o cmark/scanners.o cmark/utf8.o cmark/buffer.o cmark/references.o cmark/render.o cmark/man.o cmark/xml.o cmark/html.o cmark/commonmark.o cmark/latex.o cmark/houdini_href_e.o cmark/houdini_html_e.o cmark/houdini_html_u.o cmark/cmark_ctype.o cmark/arena.o cmark/linked_list.o cmark/plugin.o cmark/registry.o cmark/syntax_extension.o cmark/plaintext.o cmark/footnotes.o cmark/map.o extensions/autolink.o extensions/core-extensions.o extensions/ext_scanners.o extensions/strikethrough.o extensions/table.o extensions/tagfilter.o extensions/tasklist.o
+"
+"1","gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o commonmark.so extensions.o init.o wrapper.o -Lcmark -lstatcmark -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-commonmark/00new/commonmark/libs
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (commonmark)
+"
+"2","* installing *source* package ‘htmlwidgets’ ...
+"
+"2","** package ‘htmlwidgets’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (htmlwidgets)
+"
+"2","* installing *source* package ‘xml2’ ...
+"
+"2","** package ‘xml2’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","Using PKG_CFLAGS=
+Using PKG_LIBS=-lxml2
+"
+"1","------------------------- ANTICONF ERROR ---------------------------
+Configuration failed because libxml-2.0 was not found. Try installing:
+ * deb: libxml2-dev (Debian, Ubuntu, etc)
+ * rpm: libxml2-devel (Fedora, CentOS, RHEL)
+ * csw: libxml2_dev (Solaris)
+If libxml-2.0 is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a libxml-2.0.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+--------------------------------------------------------------------
+"
+"2","ERROR: configuration failed for package ‘xml2’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/xml2’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘xml2’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘V8’ ...
+"
+"2","** package ‘V8’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","Found C++17 compiler: g++
+"
+"1","Target architecture: aarch64 
+"
+"2"," [0%] Downloaded 1309 bytes..."
+"2"," [0%] Downloaded 17693 bytes... [0%] Downloaded 20528 bytes..."
+"2"," [0%] Downloaded 23372 bytes..."
+"2"," [0%] Downloaded 26216 bytes..."
+"2"," [0%] Downloaded 29060 bytes..."
+"2"," [0%] Downloaded 31904 bytes..."
+"2"," [0%] Downloaded 34077 bytes..."
+"2"," [0%] Downloaded 36912 bytes..."
+"2"," [0%] Downloaded 39756 bytes..."
+"2"," [0%] Downloaded 42600 bytes..."
+"2"," [0%] Downloaded 45444 bytes..."
+"2"," [0%] Downloaded 48288 bytes..."
+"2"," [0%] Downloaded 50461 bytes..."
+"2"," [0%] Downloaded 53296 bytes..."
+"2"," [0%] Downloaded 56140 bytes..."
+"2"," [0%] Downloaded 58984 bytes..."
+"2"," [0%] Downloaded 59409 bytes..."
+"2"," [0%] Downloaded 75784 bytes..."
+"2"," [0%] Downloaded 92159 bytes..."
+"2"," [0%] Downloaded 108534 bytes..."
+"2"," [1%] Downloaded 124945 bytes..."
+"2"," [1%] Downloaded 141320 bytes..."
+"2"," [1%] Downloaded 157695 bytes..."
+"2"," [1%] Downloaded 174070 bytes..."
+"2"," [1%] Downloaded 190481 bytes..."
+"2"," [1%] Downloaded 206856 bytes..."
+"2"," [1%] Downloaded 223231 bytes..."
+"2"," [1%] Downloaded 239606 bytes..."
+"2"," [2%] Downloaded 272392 bytes..."
+"2"," [2%] Downloaded 288767 bytes..."
+"2"," [2%] Downloaded 305142 bytes..."
+"2"," [2%] Downloaded 321553 bytes..."
+"2"," [2%] Downloaded 354303 bytes..."
+"2"," [3%] Downloaded 387089 bytes..."
+"2"," [3%] Downloaded 419839 bytes..."
+"2"," [3%] Downloaded 469000 bytes..."
+"2"," [4%] Downloaded 485375 bytes..."
+"2"," [4%] Downloaded 501750 bytes..."
+"2"," [4%] Downloaded 518161 bytes..."
+"2"," [4%] Downloaded 534536 bytes..."
+"2"," [4%] Downloaded 583697 bytes..."
+"2"," [4%] Downloaded 600072 bytes..."
+"2"," [5%] Downloaded 616447 bytes..."
+"2"," [5%] Downloaded 632822 bytes..."
+"2"," [5%] Downloaded 714769 bytes..."
+"2"," [6%] Downloaded 763894 bytes..."
+"2"," [6%] Downloaded 796680 bytes..."
+"2"," [7%] Downloaded 878591 bytes..."
+"2"," [7%] Downloaded 944127 bytes..."
+"2"," [8%] Downloaded 976913 bytes..."
+"2"," [8%] Downloaded 993288 bytes..."
+"2"," [8%] Downloaded 1026038 bytes..."
+"2"," [8%] Downloaded 1058824 bytes..."
+"2"," [9%] Downloaded 1107985 bytes..."
+"2"," [9%] Downloaded 1189896 bytes..."
+"2"," [9%] Downloaded 1206271 bytes..."
+"2"," [10%] Downloaded 1222646 bytes..."
+"2"," [10%] Downloaded 1288182 bytes..."
+"2"," [11%] Downloaded 1337343 bytes..."
+"2"," [11%] Downloaded 1419254 bytes..."
+"2"," [11%] Downloaded 1435665 bytes..."
+"2"," [12%] Downloaded 1468415 bytes..."
+"2"," [12%] Downloaded 1501201 bytes..."
+"2"," [12%] Downloaded 1517576 bytes..."
+"2"," [12%] Downloaded 1566737 bytes..."
+"2"," [13%] Downloaded 1599487 bytes..."
+"2"," [13%] Downloaded 1615862 bytes..."
+"2"," [13%] Downloaded 1648648 bytes... [13%] Downloaded 1665023 bytes..."
+"2"," [14%] Downloaded 1697809 bytes..."
+"2"," [14%] Downloaded 1714184 bytes..."
+"2"," [14%] Downloaded 1746934 bytes..."
+"2"," [14%] Downloaded 1779720 bytes..."
+"2"," [14%] Downloaded 1812470 bytes..."
+"2"," [15%] Downloaded 1878006 bytes..."
+"2"," [16%] Downloaded 1976328 bytes..."
+"2"," [16%] Downloaded 1992703 bytes..."
+"2"," [16%] Downloaded 2025489 bytes..."
+"2"," [16%] Downloaded 2058239 bytes..."
+"2"," [17%] Downloaded 2074614 bytes..."
+"2"," [17%] Downloaded 2123775 bytes..."
+"2"," [17%] Downloaded 2140150 bytes..."
+"2"," [17%] Downloaded 2172936 bytes..."
+"2"," [18%] Downloaded 2205686 bytes..."
+"2"," [18%] Downloaded 2254847 bytes..."
+"2"," [18%] Downloaded 2287633 bytes..."
+"2"," [19%] Downloaded 2336758 bytes..."
+"2"," [19%] Downloaded 2385919 bytes..."
+"2"," [19%] Downloaded 2418705 bytes..."
+"2"," [20%] Downloaded 2467830 bytes..."
+"2"," [21%] Downloaded 2566152 bytes..."
+"2"," [21%] Downloaded 2598902 bytes..."
+"2"," [21%] Downloaded 2615313 bytes..."
+"2"," [21%] Downloaded 2648063 bytes..."
+"2"," [21%] Downloaded 2651421 bytes..."
+"2"," [22%] Downloaded 2700546 bytes..."
+"2"," [22%] Downloaded 2733332 bytes..."
+"2"," [22%] Downloaded 2749725 bytes..."
+"2"," [22%] Downloaded 2782493 bytes..."
+"2"," [23%] Downloaded 2791441 bytes..."
+"2"," [23%] Downloaded 2798877 bytes..."
+"2"," [24%] Downloaded 2946333 bytes..."
+"2"," [24%] Downloaded 2979101 bytes..."
+"2"," [24%] Downloaded 3028253 bytes..."
+"2"," [25%] Downloaded 3037201 bytes..."
+"2"," [25%] Downloaded 3044637 bytes..."
+"2"," [25%] Downloaded 3077405 bytes..."
+"2"," [25%] Downloaded 3110173 bytes..."
+"2"," [25%] Downloaded 3126557 bytes..."
+"2"," [26%] Downloaded 3192093 bytes..."
+"2"," [26%] Downloaded 3208477 bytes..."
+"2"," [26%] Downloaded 3241245 bytes..."
+"2"," [26%] Downloaded 3257629 bytes..."
+"2"," [27%] Downloaded 3290397 bytes..."
+"2"," [27%] Downloaded 3306781 bytes..."
+"2"," [27%] Downloaded 3339549 bytes..."
+"2"," [27%] Downloaded 3368221 bytes..."
+"2"," [28%] Downloaded 3405085 bytes..."
+"2"," [28%] Downloaded 3487005 bytes..."
+"2"," [28%] Downloaded 3503389 bytes..."
+"2"," [29%] Downloaded 3536157 bytes..."
+"2"," [29%] Downloaded 3568925 bytes..."
+"2"," [29%] Downloaded 3585309 bytes..."
+"2"," [29%] Downloaded 3618077 bytes..."
+"2"," [30%] Downloaded 3650845 bytes..."
+"2"," [30%] Downloaded 3667229 bytes..."
+"2"," [30%] Downloaded 3683613 bytes..."
+"2"," [30%] Downloaded 3749149 bytes..."
+"2"," [31%] Downloaded 3774481 bytes..."
+"2"," [31%] Downloaded 3798301 bytes..."
+"2"," [31%] Downloaded 3831069 bytes..."
+"2"," [32%] Downloaded 3892509 bytes..."
+"2"," [32%] Downloaded 3929373 bytes..."
+"2"," [32%] Downloaded 3945757 bytes..."
+"2"," [32%] Downloaded 3994909 bytes..."
+"2"," [33%] Downloaded 4027677 bytes..."
+"2"," [33%] Downloaded 4076829 bytes..."
+"2"," [33%] Downloaded 4109597 bytes..."
+"2"," [34%] Downloaded 4158749 bytes..."
+"2"," [34%] Downloaded 4175133 bytes..."
+"2"," [35%] Downloaded 4257053 bytes..."
+"2"," [35%] Downloaded 4338973 bytes..."
+"2"," [36%] Downloaded 4380689 bytes..."
+"2"," [36%] Downloaded 4420893 bytes..."
+"2"," [36%] Downloaded 4470045 bytes..."
+"2"," [37%] Downloaded 4486429 bytes..."
+"2"," [37%] Downloaded 4502813 bytes..."
+"2"," [37%] Downloaded 4544529 bytes..."
+"2"," [37%] Downloaded 4584733 bytes..."
+"2"," [37%] Downloaded 4601117 bytes..."
+"2"," [38%] Downloaded 4633885 bytes..."
+"2"," [38%] Downloaded 4683037 bytes..."
+"2"," [38%] Downloaded 4715805 bytes..."
+"2"," [39%] Downloaded 4741137 bytes..."
+"2"," [39%] Downloaded 4764957 bytes..."
+"2"," [39%] Downloaded 4797725 bytes..."
+"2"," [39%] Downloaded 4846877 bytes..."
+"2"," [40%] Downloaded 4896029 bytes..."
+"2"," [40%] Downloaded 4928797 bytes..."
+"2"," [40%] Downloaded 4945181 bytes..."
+"2"," [41%] Downloaded 4977949 bytes..."
+"2"," [41%] Downloaded 5027101 bytes..."
+"2"," [41%] Downloaded 5059869 bytes..."
+"2"," [42%] Downloaded 5092637 bytes..."
+"2"," [42%] Downloaded 5125405 bytes..."
+"2"," [42%] Downloaded 5158173 bytes..."
+"2"," [42%] Downloaded 5174557 bytes..."
+"2"," [42%] Downloaded 5207325 bytes..."
+"2"," [43%] Downloaded 5240093 bytes..."
+"2"," [43%] Downloaded 5265425 bytes..."
+"2"," [43%] Downloaded 5305629 bytes..."
+"2"," [43%] Downloaded 5322013 bytes..."
+"2"," [44%] Downloaded 5338397 bytes..."
+"2"," [44%] Downloaded 5371165 bytes..."
+"2"," [44%] Downloaded 5403933 bytes..."
+"2"," [44%] Downloaded 5436701 bytes..."
+"2"," [45%] Downloaded 5502237 bytes... [45%] Downloaded 5518621 bytes..."
+"2"," [45%] Downloaded 5551389 bytes..."
+"2"," [46%] Downloaded 5600541 bytes..."
+"2"," [46%] Downloaded 5633309 bytes..."
+"2"," [46%] Downloaded 5666077 bytes..."
+"2"," [46%] Downloaded 5682461 bytes..."
+"2"," [47%] Downloaded 5731613 bytes..."
+"2"," [47%] Downloaded 5764381 bytes..."
+"2"," [47%] Downloaded 5773329 bytes..."
+"2"," [48%] Downloaded 5829917 bytes..."
+"2"," [48%] Downloaded 5862685 bytes..."
+"2"," [48%] Downloaded 5879069 bytes..."
+"2"," [48%] Downloaded 5928221 bytes..."
+"2"," [49%] Downloaded 5960989 bytes..."
+"2"," [49%] Downloaded 5993757 bytes..."
+"2"," [49%] Downloaded 6026525 bytes..."
+"2"," [49%] Downloaded 6059293 bytes..."
+"2"," [50%] Downloaded 6075677 bytes..."
+"2"," [50%] Downloaded 6108445 bytes..."
+"2"," [50%] Downloaded 6141213 bytes..."
+"2"," [50%] Downloaded 6173981 bytes..."
+"2"," [51%] Downloaded 6206749 bytes..."
+"2"," [51%] Downloaded 6239517 bytes..."
+"2"," [51%] Downloaded 6288669 bytes..."
+"2"," [52%] Downloaded 6330385 bytes..."
+"2"," [52%] Downloaded 6354205 bytes..."
+"2"," [52%] Downloaded 6370589 bytes..."
+"2"," [52%] Downloaded 6419741 bytes..."
+"2"," [53%] Downloaded 6452509 bytes..."
+"2"," [53%] Downloaded 6468893 bytes..."
+"2"," [53%] Downloaded 6501661 bytes..."
+"2"," [53%] Downloaded 6534429 bytes..."
+"2"," [54%] Downloaded 6567197 bytes..."
+"2"," [54%] Downloaded 6599965 bytes..."
+"2"," [54%] Downloaded 6632733 bytes..."
+"2"," [54%] Downloaded 6649117 bytes..."
+"2"," [55%] Downloaded 6681885 bytes..."
+"2"," [55%] Downloaded 6698269 bytes..."
+"2"," [55%] Downloaded 6731037 bytes..."
+"2"," [55%] Downloaded 6739985 bytes..."
+"2"," [55%] Downloaded 6747421 bytes..."
+"2"," [55%] Downloaded 6780189 bytes..."
+"2"," [56%] Downloaded 6796573 bytes..."
+"2"," [56%] Downloaded 6829341 bytes..."
+"2"," [56%] Downloaded 6862109 bytes..."
+"2"," [56%] Downloaded 6878493 bytes..."
+"2"," [56%] Downloaded 6911261 bytes..."
+"2"," [57%] Downloaded 6944029 bytes..."
+"2"," [57%] Downloaded 6976797 bytes..."
+"2"," [57%] Downloaded 6993181 bytes..."
+"2"," [57%] Downloaded 7009565 bytes..."
+"2"," [57%] Downloaded 7018513 bytes..."
+"2"," [57%] Downloaded 7025949 bytes..."
+"2"," [58%] Downloaded 7042333 bytes..."
+"2"," [58%] Downloaded 7107869 bytes..."
+"2"," [58%] Downloaded 7124253 bytes..."
+"2"," [59%] Downloaded 7157021 bytes..."
+"2"," [59%] Downloaded 7189789 bytes..."
+"2"," [59%] Downloaded 7206173 bytes..."
+"2"," [59%] Downloaded 7271709 bytes..."
+"2"," [60%] Downloaded 7320861 bytes..."
+"2"," [60%] Downloaded 7353629 bytes..."
+"2"," [60%] Downloaded 7386397 bytes..."
+"2"," [61%] Downloaded 7419165 bytes..."
+"2"," [61%] Downloaded 7451933 bytes..."
+"2"," [61%] Downloaded 7484701 bytes..."
+"2"," [61%] Downloaded 7517469 bytes..."
+"2"," [62%] Downloaded 7533853 bytes..."
+"2"," [62%] Downloaded 7566621 bytes..."
+"2"," [62%] Downloaded 7632157 bytes..."
+"2"," [63%] Downloaded 7664925 bytes..."
+"2"," [63%] Downloaded 7697693 bytes..."
+"2"," [63%] Downloaded 7730461 bytes..."
+"2"," [64%] Downloaded 7763229 bytes..."
+"2"," [64%] Downloaded 7779613 bytes..."
+"2"," [64%] Downloaded 7812381 bytes..."
+"2"," [64%] Downloaded 7828765 bytes..."
+"2"," [64%] Downloaded 7845149 bytes..."
+"2"," [64%] Downloaded 7877917 bytes..."
+"2"," [65%] Downloaded 7910685 bytes..."
+"2"," [65%] Downloaded 7927069 bytes..."
+"2"," [65%] Downloaded 7959837 bytes..."
+"2"," [65%] Downloaded 7992605 bytes..."
+"2"," [66%] Downloaded 8025373 bytes..."
+"2"," [66%] Downloaded 8058141 bytes..."
+"2"," [66%] Downloaded 8090909 bytes..."
+"2"," [67%] Downloaded 8140061 bytes..."
+"2"," [67%] Downloaded 8172829 bytes..."
+"2"," [67%] Downloaded 8189213 bytes..."
+"2"," [67%] Downloaded 8221981 bytes..."
+"2"," [68%] Downloaded 8254749 bytes..."
+"2"," [68%] Downloaded 8287517 bytes..."
+"2"," [68%] Downloaded 8320285 bytes..."
+"2"," [68%] Downloaded 8353053 bytes..."
+"2"," [69%] Downloaded 8369437 bytes..."
+"2"," [69%] Downloaded 8418589 bytes..."
+"2"," [69%] Downloaded 8463645 bytes..."
+"2"," [70%] Downloaded 8512797 bytes..."
+"2"," [70%] Downloaded 8516893 bytes..."
+"2"," [70%] Downloaded 8533277 bytes..."
+"2"," [70%] Downloaded 8566045 bytes..."
+"2"," [71%] Downloaded 8615197 bytes..."
+"2"," [71%] Downloaded 8647965 bytes..."
+"2"," [71%] Downloaded 8680733 bytes..."
+"2"," [71%] Downloaded 8697117 bytes..."
+"2"," [72%] Downloaded 8762653 bytes..."
+"2"," [72%] Downloaded 8779037 bytes..."
+"2"," [72%] Downloaded 8811805 bytes..."
+"2"," [72%] Downloaded 8844573 bytes..."
+"2"," [73%] Downloaded 8860957 bytes..."
+"2"," [73%] Downloaded 8893725 bytes..."
+"2"," [73%] Downloaded 8926493 bytes..."
+"2"," [73%] Downloaded 8959261 bytes..."
+"2"," [74%] Downloaded 8992029 bytes..."
+"2"," [74%] Downloaded 9008413 bytes..."
+"2"," [74%] Downloaded 9041181 bytes..."
+"2"," [74%] Downloaded 9073949 bytes..."
+"2"," [74%] Downloaded 9090333 bytes..."
+"2"," [75%] Downloaded 9106717 bytes..."
+"2"," [75%] Downloaded 9139485 bytes..."
+"2"," [75%] Downloaded 9155869 bytes..."
+"2"," [75%] Downloaded 9188637 bytes..."
+"2"," [76%] Downloaded 9221405 bytes..."
+"2"," [76%] Downloaded 9254173 bytes..."
+"2"," [76%] Downloaded 9270557 bytes..."
+"2"," [76%] Downloaded 9303325 bytes..."
+"2"," [76%] Downloaded 9336093 bytes..."
+"2"," [77%] Downloaded 9368861 bytes..."
+"2"," [77%] Downloaded 9401629 bytes..."
+"2"," [77%] Downloaded 9434397 bytes..."
+"2"," [77%] Downloaded 9450781 bytes..."
+"2"," [78%] Downloaded 9483549 bytes..."
+"2"," [78%] Downloaded 9516317 bytes..."
+"2"," [78%] Downloaded 9532701 bytes..."
+"2"," [78%] Downloaded 9549085 bytes..."
+"2"," [78%] Downloaded 9565469 bytes..."
+"2"," [79%] Downloaded 9598237 bytes..."
+"2"," [79%] Downloaded 9631005 bytes..."
+"2"," [79%] Downloaded 9647389 bytes..."
+"2"," [79%] Downloaded 9680157 bytes..."
+"2"," [80%] Downloaded 9712925 bytes..."
+"2"," [80%] Downloaded 9729309 bytes..."
+"2"," [80%] Downloaded 9778461 bytes..."
+"2"," [80%] Downloaded 9811229 bytes..."
+"2"," [81%] Downloaded 9860381 bytes..."
+"2"," [81%] Downloaded 9893149 bytes..."
+"2"," [81%] Downloaded 9909533 bytes..."
+"2"," [81%] Downloaded 9942301 bytes..."
+"2"," [82%] Downloaded 9975069 bytes..."
+"2"," [82%] Downloaded 9991453 bytes..."
+"2"," [82%] Downloaded 10007837 bytes..."
+"2"," [82%] Downloaded 10040605 bytes..."
+"2"," [83%] Downloaded 10073373 bytes..."
+"2"," [83%] Downloaded 10089757 bytes..."
+"2"," [83%] Downloaded 10106141 bytes..."
+"2"," [83%] Downloaded 10138909 bytes..."
+"2"," [84%] Downloaded 10188061 bytes..."
+"2"," [84%] Downloaded 10220829 bytes..."
+"2"," [84%] Downloaded 10237213 bytes..."
+"2"," [84%] Downloaded 10269981 bytes..."
+"2"," [85%] Downloaded 10306845 bytes..."
+"2"," [85%] Downloaded 10339613 bytes..."
+"2"," [85%] Downloaded 10348561 bytes..."
+"2"," [85%] Downloaded 10372381 bytes..."
+"2"," [85%] Downloaded 10388765 bytes..."
+"2"," [85%] Downloaded 10405149 bytes..."
+"2"," [86%] Downloaded 10454301 bytes..."
+"2"," [86%] Downloaded 10470685 bytes..."
+"2"," [86%] Downloaded 10503453 bytes..."
+"2"," [86%] Downloaded 10519837 bytes..."
+"2"," [87%] Downloaded 10552605 bytes..."
+"2"," [87%] Downloaded 10601757 bytes..."
+"2"," [87%] Downloaded 10634525 bytes..."
+"2"," [87%] Downloaded 10667293 bytes..."
+"2"," [88%] Downloaded 10683677 bytes..."
+"2"," [88%] Downloaded 10732829 bytes..."
+"2"," [88%] Downloaded 10765597 bytes..."
+"2"," [88%] Downloaded 10781981 bytes..."
+"2"," [89%] Downloaded 10814749 bytes..."
+"2"," [89%] Downloaded 10863901 bytes..."
+"2"," [89%] Downloaded 10880285 bytes..."
+"2"," [90%] Downloaded 10945821 bytes..."
+"2"," [90%] Downloaded 10978589 bytes..."
+"2"," [90%] Downloaded 11011357 bytes..."
+"2"," [91%] Downloaded 11044125 bytes..."
+"2"," [91%] Downloaded 11089181 bytes..."
+"2"," [91%] Downloaded 11105565 bytes..."
+"2"," [91%] Downloaded 11138333 bytes..."
+"2"," [92%] Downloaded 11203869 bytes..."
+"2"," [92%] Downloaded 11236637 bytes..."
+"2"," [92%] Downloaded 11269405 bytes..."
+"2"," [93%] Downloaded 11285789 bytes..."
+"2"," [93%] Downloaded 11318557 bytes..."
+"2"," [93%] Downloaded 11334941 bytes..."
+"2"," [93%] Downloaded 11351325 bytes..."
+"2"," [93%] Downloaded 11379997 bytes..."
+"2"," [94%] Downloaded 11416861 bytes..."
+"2"," [94%] Downloaded 11449629 bytes..."
+"2"," [94%] Downloaded 11482397 bytes..."
+"2"," [95%] Downloaded 11613469 bytes..."
+"2"," [96%] Downloaded 11646237 bytes..."
+"2"," [96%] Downloaded 11679005 bytes..."
+"2"," [96%] Downloaded 11720721 bytes..."
+"2"," [96%] Downloaded 11760925 bytes..."
+"2"," [97%] Downloaded 11793693 bytes..."
+"2"," [97%] Downloaded 11826461 bytes..."
+"2"," [97%] Downloaded 11851793 bytes..."
+"2"," [97%] Downloaded 11875613 bytes..."
+"2"," [98%] Downloaded 11908381 bytes..."
+"2"," [98%] Downloaded 11924765 bytes..."
+"2"," [98%] Downloaded 11957533 bytes..."
+"2"," [98%] Downloaded 11990301 bytes..."
+"2"," [99%] Downloaded 12006685 bytes..."
+"2"," [99%] Downloaded 12032017 bytes..."
+"2"," [99%] Downloaded 12072221 bytes..."
+"2"," [99%] Downloaded 12088605 bytes..."
+"2"," [99%] Downloaded 12104989 bytes..."
+"2"," [100%] Downloaded 12125225 bytes...
+"
+"1","Using CXXCPP=g++ -std=gnu++17 -E
+Using PKG_CFLAGS=-I/tmp/RtmpmJMVEk/R.INSTALL16433c5c9cae/V8/.deps/include
+Using PKG_LIBS=-L/tmp/RtmpmJMVEk/R.INSTALL16433c5c9cae/V8/.deps/lib -lv8_monolith
+"
+"1","Running feature test for pointer compression...
+"
+"1","Enabling pointer compression
+Running feature test for sandbox...
+"
+"1","Sandbox not enabled
+"
+"2","** libs
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++17
+"
+"1","rm -f V8.so RcppExports.o bindings.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I/tmp/RtmpmJMVEk/R.INSTALL16433c5c9cae/V8/.deps/include -DV8_COMPRESS_POINTERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I/tmp/RtmpmJMVEk/R.INSTALL16433c5c9cae/V8/.deps/include -DV8_COMPRESS_POINTERS -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c bindings.cpp -o bindings.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o V8.so RcppExports.o bindings.o -L/tmp/RtmpmJMVEk/R.INSTALL16433c5c9cae/V8/.deps/lib -lv8_monolith -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-V8/00new/V8/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (V8)
+"
+"2","* installing *source* package ‘rex’ ...
+"
+"2","** package ‘rex’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (rex)
+"
+"2","* installing *source* package ‘timechange’ ...
+"
+"2","** package ‘timechange’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c common.cpp -o common.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cpp11.cpp -o cpp11.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c get.cpp -o get.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c parse.c -o parse.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c round.cpp -o round.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c tzone.cpp -o tzone.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c update.cpp -o update.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cctz/src/time_zone_fixed.cc -o cctz/src/time_zone_fixed.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cctz/src/time_zone_if.cc -o cctz/src/time_zone_if.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cctz/src/time_zone_impl.cc -o cctz/src/time_zone_impl.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cctz/src/time_zone_info.cc -o cctz/src/time_zone_info.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cctz/src/time_zone_libc.cc -o cctz/src/time_zone_libc.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cctz/src/time_zone_lookup.cc -o cctz/src/time_zone_lookup.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cctz/src/time_zone_posix.cc -o cctz/src/time_zone_posix.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -I. -I./cctz/src/ -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cctz/src/zone_info_source.cc -o cctz/src/zone_info_source.o
+"
+"1","ar rcs libcctz.a ./cctz/src/time_zone_fixed.o ./cctz/src/time_zone_if.o ./cctz/src/time_zone_impl.o ./cctz/src/time_zone_info.o ./cctz/src/time_zone_libc.o ./cctz/src/time_zone_lookup.o ./cctz/src/time_zone_posix.o ./cctz/src/zone_info_source.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o timechange.so common.o cpp11.o get.o parse.o round.o tzone.o update.o -L. -lcctz -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-timechange/00new/timechange/libs
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (timechange)
+"
+"2","* installing *source* package ‘later’ ...
+"
+"2","** package ‘later’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","Running configure script
+"
+"1","-latomic linker flag not needed.
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c callback_registry.cpp -o callback_registry.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c debug.cpp -o debug.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c later.cpp -o later.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c later_posix.cpp -o later_posix.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c later_win32.cpp -o later_win32.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c timer_posix.cpp -o timer_posix.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c timestamp_unix.cpp -o timestamp_unix.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c timestamp_win32.cpp -o timestamp_win32.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -pthread -DSTRICT_R_HEADERS  -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tinycthread.c -o tinycthread.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o later.so RcppExports.o callback_registry.o debug.o init.o later.o later_posix.o later_win32.o timer_posix.o timestamp_unix.o timestamp_win32.o tinycthread.o -pthread -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-later/00new/later/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (later)
+"
+"2","* installing *source* package ‘markdown’ ...
+"
+"2","** package ‘markdown’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (markdown)
+"
+"2","* installing *source* package ‘reactable’ ...
+"
+"2","** package ‘reactable’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (reactable)
+"
+"2","* installing *source* package ‘magick’ ...
+"
+"2","** package ‘magick’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","Using PKG_CFLAGS=
+Using PKG_LIBS=-lMagick++-6.Q16 -lMagickWand-6.Q16 -lMagickCore-6.Q16
+"
+"1","--------------------------- [ANTICONF] --------------------------------
+Configuration failed to find the Magick++ library. Try installing:
+ - deb: libmagick++-dev (Debian, Ubuntu)
+ - rpm: ImageMagick-c++-devel (Fedora, CentOS, RHEL)
+ - csw: imagemagick_dev (Solaris)
+ - brew imagemagick@6 (MacOS)
+If Magick++ is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a Magick++.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+-------------------------- [ERROR MESSAGE] ---------------------------
+"
+"1","<stdin>:1:10: fatal error: Magick++.h: No such file or directory
+compilation terminated.
+"
+"1","--------------------------------------------------------------------
+"
+"2","ERROR: configuration failed for package ‘magick’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/magick’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘magick’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘paletteer’ ...
+"
+"2","** package ‘paletteer’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** data
+"
+"2","*** moving datasets to lazyload DB
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (paletteer)
+"
+"2","ERROR: dependency ‘xml2’ is not available for package ‘rvest’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/rvest’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘rvest’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘tidyr’ ...
+"
+"2","** package ‘tidyr’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cpp11.cpp -o cpp11.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c melt.cpp -o melt.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c simplifyPieces.cpp -o simplifyPieces.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o tidyr.so cpp11.o melt.o simplifyPieces.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-tidyr/00new/tidyr/libs
+"
+"2","** R
+"
+"2","** data
+"
+"2","*** moving datasets to lazyload DB
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (tidyr)
+"
+"2","* installing *source* package ‘websocket’ ...
+"
+"2","** package ‘websocket’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","Using PKG_CFLAGS=
+"
+"1","Using PKG_LIBS=-lssl -lcrypto
+"
+"2","** libs
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++11
+"
+"1","g++ -std=gnu++11 -I""/usr/local/lib/R/include"" -DNDEBUG -I./lib  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/AsioHeaders/include' -I'/usr/local/lib/R/site-library/later/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cpp11.cpp -o cpp11.o
+"
+"1","g++ -std=gnu++11 -I""/usr/local/lib/R/include"" -DNDEBUG -I./lib  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/AsioHeaders/include' -I'/usr/local/lib/R/site-library/later/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c debug.cpp -o debug.o
+"
+"1","g++ -std=gnu++11 -I""/usr/local/lib/R/include"" -DNDEBUG -I./lib  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/AsioHeaders/include' -I'/usr/local/lib/R/site-library/later/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c websocket.cpp -o websocket.o
+"
+"1","g++ -std=gnu++11 -I""/usr/local/lib/R/include"" -DNDEBUG -I./lib  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/AsioHeaders/include' -I'/usr/local/lib/R/site-library/later/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c websocket_connection.cpp -o websocket_connection.o
+"
+"1","g++ -std=gnu++11 -I""/usr/local/lib/R/include"" -DNDEBUG -I./lib  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/AsioHeaders/include' -I'/usr/local/lib/R/site-library/later/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c websocket_task.cpp -o websocket_task.o
+"
+"1","g++ -std=gnu++11 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o websocket.so cpp11.o debug.o websocket.o websocket_connection.o websocket_task.o -lssl -lcrypto -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-websocket/00new/websocket/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (websocket)
+"
+"2","* installing *source* package ‘promises’ ...
+"
+"2","** package ‘promises’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c promise_task.cpp -o promise_task.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o promises.so RcppExports.o promise_task.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-promises/00new/promises/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (promises)
+"
+"2","* installing *source* package ‘juicyjuice’ ...
+"
+"2","** package ‘juicyjuice’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (juicyjuice)
+"
+"2","* installing *source* package ‘covr’ ...
+"
+"2","** package ‘covr’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c reassign.c -o reassign.o
+"
+"1","gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o covr.so reassign.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-covr/00new/covr/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (covr)
+"
+"2","* installing *source* package ‘lubridate’ ...
+"
+"2","** package ‘lubridate’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c datetime.c -o datetime.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c period.c -o period.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c tparse.c -o tparse.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c utils.c -o utils.o
+"
+"1","gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o lubridate.so datetime.o init.o period.o tparse.o utils.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-lubridate/00new/lubridate/libs
+"
+"2","** R
+"
+"2","** data
+"
+"2","*** moving datasets to lazyload DB
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (lubridate)
+"
+"2","* installing *source* package ‘httpuv’ ...
+"
+"2","** package ‘httpuv’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","./configure: 20: pkg-config: not found
+** Using bundled copy of libuv
+** PKG_CFLAGS=-Ilibuv/include
+** PKG_LIBS=./libuv/.libs/libuv.a
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c callback.cpp -o callback.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c callbackqueue.cpp -o callbackqueue.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c filedatasource-unix.cpp -o filedatasource-unix.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c filedatasource-win.cpp -o filedatasource-win.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fs.cpp -o fs.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c gzipdatasource.cpp -o gzipdatasource.o
+"
+"2","In file included from gzipdatasource.cpp:1:
+gzipdatasource.h:4:10: fatal error: zlib.h: No such file or directory
+    4 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+"
+"2","make: *** [/usr/local/lib/R/etc/Makeconf:204: gzipdatasource.o] Error 1
+"
+"2","ERROR: compilation failed for package ‘httpuv’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/httpuv’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘httpuv’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘chromote’ ...
+"
+"2","** package ‘chromote’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (chromote)
+"
+"2","ERROR: dependency ‘xml2’ is not available for package ‘gt’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/gt’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘gt’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","ERROR: dependency ‘httpuv’ is not available for package ‘shiny’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/shiny’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘shiny’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘webshot2’ ...
+"
+"2","** package ‘webshot2’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (webshot2)
+"
+"2","
+"
+"2",""
+"2","The downloaded source packages are in
+	‘/tmp/RtmpZOWFi2/downloaded_packages’"
+"2",""
+"2","
+"
+"0","if(!is.element('gtsummary', installed.packages()[,1])){install.packages('gt',dependencies = T)}"
+"2","Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+"
+"2","also installing the dependencies ‘httpuv’, ‘xml2’, ‘magick’, ‘rvest’, ‘shiny’
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/httpuv_1.6.15.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 1886279 bytes (1.8 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.8 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/xml2_1.3.6.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 294719 bytes (287 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 287 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/magick_2.8.3.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 4577823 bytes (4.4 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 4.4 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/rvest_1.0.4.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 117242 bytes (114 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 114 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/shiny_1.8.1.1.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 3045720 bytes (2.9 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.9 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/gt_0.10.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 2250326 bytes (2.1 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.1 MB
+
+"
+"2","* installing *source* package ‘httpuv’ ...
+"
+"2","** package ‘httpuv’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","./configure: 20: pkg-config: not found
+** Using bundled copy of libuv
+** PKG_CFLAGS=-Ilibuv/include
+** PKG_LIBS=./libuv/.libs/libuv.a
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c callback.cpp -o callback.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c callbackqueue.cpp -o callbackqueue.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c filedatasource-unix.cpp -o filedatasource-unix.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c filedatasource-win.cpp -o filedatasource-win.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fs.cpp -o fs.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c gzipdatasource.cpp -o gzipdatasource.o
+"
+"2","In file included from gzipdatasource.cpp:1:
+gzipdatasource.h:4:10: fatal error: zlib.h: No such file or directory
+    4 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+"
+"2","make: *** [/usr/local/lib/R/etc/Makeconf:204: gzipdatasource.o] Error 1
+"
+"2","ERROR: compilation failed for package ‘httpuv’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/httpuv’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘httpuv’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘xml2’ ...
+"
+"2","** package ‘xml2’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","Using PKG_CFLAGS=
+Using PKG_LIBS=-lxml2
+"
+"1","------------------------- ANTICONF ERROR ---------------------------
+Configuration failed because libxml-2.0 was not found. Try installing:
+ * deb: libxml2-dev (Debian, Ubuntu, etc)
+ * rpm: libxml2-devel (Fedora, CentOS, RHEL)
+ * csw: libxml2_dev (Solaris)
+If libxml-2.0 is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a libxml-2.0.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+--------------------------------------------------------------------
+"
+"2","ERROR: configuration failed for package ‘xml2’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/xml2’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘xml2’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘magick’ ...
+"
+"2","** package ‘magick’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","Using PKG_CFLAGS=
+Using PKG_LIBS=-lMagick++-6.Q16 -lMagickWand-6.Q16 -lMagickCore-6.Q16
+"
+"1","--------------------------- [ANTICONF] --------------------------------
+Configuration failed to find the Magick++ library. Try installing:
+ - deb: libmagick++-dev (Debian, Ubuntu)
+ - rpm: ImageMagick-c++-devel (Fedora, CentOS, RHEL)
+ - csw: imagemagick_dev (Solaris)
+ - brew imagemagick@6 (MacOS)
+If Magick++ is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a Magick++.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+-------------------------- [ERROR MESSAGE] ---------------------------
+"
+"1","<stdin>:1:10: fatal error: Magick++.h: No such file or directory
+compilation terminated.
+"
+"1","--------------------------------------------------------------------
+"
+"2","ERROR: configuration failed for package ‘magick’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/magick’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘magick’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","ERROR: dependency ‘xml2’ is not available for package ‘rvest’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/rvest’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘rvest’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","ERROR: dependency ‘httpuv’ is not available for package ‘shiny’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/shiny’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘shiny’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","ERROR: dependency ‘xml2’ is not available for package ‘gt’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/gt’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘gt’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","
+"
+"2",""
+"2","The downloaded source packages are in
+	‘/tmp/RtmpZOWFi2/downloaded_packages’"
+"2",""
+"2","
+"
+"0","if(!is.element('forcats', installed.packages()[,1])){install.packages('forcats',dependencies = T)}"
+"2","Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+"
+"2","also installing the dependencies ‘bit’, ‘prettyunits’, ‘bit64’, ‘progress’, ‘clipr’, ‘hms’, ‘vroom’, ‘tzdb’, ‘readr’
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/bit_4.0.5.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 828762 bytes (809 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 809 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/prettyunits_1.2.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 98282 bytes (95 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 95 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/bit64_4.0.5.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 135707 bytes (132 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 132 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/progress_1.2.3.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 30788 bytes (30 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 30 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/clipr_0.8.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 21949 bytes (21 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 21 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/hms_1.1.3.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 44407 bytes (43 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 43 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/vroom_1.6.5.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 746589 bytes (729 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 729 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/tzdb_0.4.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 588373 bytes (574 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 574 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/readr_2.1.5.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 295602 bytes (288 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 288 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/forcats_1.0.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 296123 bytes (289 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 289 KB
+
+"
+"2","* installing *source* package ‘bit’ ...
+"
+"2","** package ‘bit’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c attrutil.c -o attrutil.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bit.c -o bit.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c chunkutil.c -o chunkutil.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c clone.c -o clone.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c integerutil.c -o integerutil.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c merge.c -o merge.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rle.c -o rle.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sort.c -o sort.o
+"
+"1","gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o bit.so attrutil.o bit.o chunkutil.o clone.o init.o integerutil.o merge.o rle.o sort.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-bit/00new/bit/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (bit)
+"
+"2","* installing *source* package ‘prettyunits’ ...
+"
+"2","** package ‘prettyunits’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (prettyunits)
+"
+"2","* installing *source* package ‘clipr’ ...
+"
+"2","** package ‘clipr’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (clipr)
+"
+"2","* installing *source* package ‘hms’ ...
+"
+"2","** package ‘hms’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (hms)
+"
+"2","* installing *source* package ‘tzdb’ ...
+"
+"2","** package ‘tzdb’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c api.cpp -o api.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cpp11.cpp -o cpp11.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c names.cpp -o names.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c path.cpp -o path.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c tz.cpp -o tz.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I/usr/local/include   -I../inst/include -DINSTALL=dummy -DAUTO_DOWNLOAD=0 -DHAS_REMOTE_API=0 -DUSE_OS_TZDB=0 -DONLY_C_LOCALE=1 -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c version.cpp -o version.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o tzdb.so api.o cpp11.o names.o path.o tz.o version.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-tzdb/00new/tzdb/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (tzdb)
+"
+"2","* installing *source* package ‘forcats’ ...
+"
+"2","** package ‘forcats’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** data
+"
+"2","*** moving datasets to lazyload DB
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (forcats)
+"
+"2","* installing *source* package ‘bit64’ ...
+"
+"2","** package ‘bit64’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c bsearch.c -o bsearch.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cache.c -o cache.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c hash64.c -o hash64.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c integer64.c -o integer64.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sort64.c -o sort64.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c sortuse64.c -o sortuse64.o
+"
+"1","gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o bit64.so bsearch.o cache.o hash64.o init.o integer64.o sort64.o sortuse64.o -lm -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-bit64/00new/bit64/libs
+"
+"2","** R
+"
+"2","** data
+"
+"2","** exec
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (bit64)
+"
+"2","* installing *source* package ‘progress’ ...
+"
+"2","** package ‘progress’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (progress)
+"
+"2","* installing *source* package ‘vroom’ ...
+"
+"2","** package ‘vroom’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Iconv.cpp -o Iconv.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c LocaleInfo.cpp -o LocaleInfo.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c altrep.cc -o altrep.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cpp11.cpp -o cpp11.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delimited_index.cc -o delimited_index.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c delimited_index_connection.cc -o delimited_index_connection.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fixed_width_index_connection.cc -o fixed_width_index_connection.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c gen.cc -o gen.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c grisu3.c -o grisu3.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c guess_type.cc -o guess_type.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c iconv_file.cc -o iconv_file.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c index_collection.cc -o index_collection.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom.cc -o vroom.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_big_int.cc -o vroom_big_int.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_chr.cc -o vroom_chr.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_date.cc -o vroom_date.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_dbl.cc -o vroom_dbl.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_dttm.cc -o vroom_dttm.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_errors.cpp -o vroom_errors.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_fct.cc -o vroom_fct.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_fwf.cc -o vroom_fwf.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_int.cc -o vroom_int.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_num.cc -o vroom_num.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_rle.cc -o vroom_rle.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_time.cc -o vroom_time.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Imio/include -DWIN32_LEAN_AND_MEAN -Ispdlog/include -DFMT_HEADER_ONLY -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/progress/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c vroom_write.cc -o vroom_write.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o vroom.so Iconv.o LocaleInfo.o altrep.o cpp11.o delimited_index.o delimited_index_connection.o fixed_width_index_connection.o gen.o grisu3.o guess_type.o iconv_file.o index_collection.o vroom.o vroom_big_int.o vroom_chr.o vroom_date.o vroom_dbl.o vroom_dttm.o vroom_errors.o vroom_fct.o vroom_fwf.o vroom_int.o vroom_num.o vroom_rle.o vroom_time.o vroom_write.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-vroom/00new/vroom/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (vroom)
+"
+"2","* installing *source* package ‘readr’ ...
+"
+"2","** package ‘readr’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Collector.cpp -o Collector.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c CollectorGuess.cpp -o CollectorGuess.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Iconv.cpp -o Iconv.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c LocaleInfo.cpp -o LocaleInfo.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Reader.cpp -o Reader.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Source.cpp -o Source.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c Tokenizer.cpp -o Tokenizer.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c TokenizerDelim.cpp -o TokenizerDelim.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c TokenizerFwf.cpp -o TokenizerFwf.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c TokenizerWs.cpp -o TokenizerWs.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c connection.cpp -o connection.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c cpp11.cpp -o cpp11.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c datetime.cpp -o datetime.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c grisu3.c -o grisu3.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c parse.cpp -o parse.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c read.cpp -o read.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c type_convert.cpp -o type_convert.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c write.cpp -o write.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG  -I'/usr/local/lib/R/site-library/cpp11/include' -I'/usr/local/lib/R/site-library/tzdb/include' -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c write_delim.cpp -o write_delim.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o readr.so Collector.o CollectorGuess.o Iconv.o LocaleInfo.o Reader.o Source.o Tokenizer.o TokenizerDelim.o TokenizerFwf.o TokenizerWs.o connection.o cpp11.o datetime.o grisu3.o init.o parse.o read.o type_convert.o write.o write_delim.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-readr/00new/readr/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (readr)
+"
+"2","
+"
+"2",""
+"2","The downloaded source packages are in
+	‘/tmp/RtmpZOWFi2/downloaded_packages’"
+"2",""
+"2","
+"
+"0","if(!is.element('ggplot2', installed.packages()[,1])){install.packages('ggplot2',dependencies = T)}"
+"0","if(!is.element('rmdformats', installed.packages()[,1])){install.packages('rmdformats',dependencies = T)}"
+"2","Installing package into ‘/usr/local/lib/R/site-library’
+(as ‘lib’ is unspecified)
+"
+"2","also installing the dependencies ‘R.methodsS3’, ‘R.oo’, ‘R.utils’, ‘proxy’, ‘R.cache’, ‘e1071’, ‘haven’, ‘shiny’, ‘miniUI’, ‘styler’, ‘classInt’, ‘labelled’, ‘httpuv’, ‘crosstalk’, ‘bookdown’, ‘questionr’, ‘DT’, ‘palmerpenguins’
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/R.methodsS3_1.8.2.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 24315 bytes (23 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 23 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/R.oo_1.26.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 383388 bytes (374 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 374 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/R.utils_2.12.3.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 363548 bytes (355 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 355 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/proxy_0.4-27.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 75015 bytes (73 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 73 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/R.cache_0.16.0.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 35376 bytes (34 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 34 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/e1071_1.7-14.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 326322 bytes (318 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 318 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/haven_2.5.4.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 314226 bytes (306 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 306 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/shiny_1.8.1.1.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 3045720 bytes (2.9 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.9 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/miniUI_0.1.1.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 99389 bytes (97 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 97 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/styler_1.10.3.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 426111 bytes (416 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 416 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/classInt_0.4-10.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 441983 bytes (431 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 431 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/labelled_2.13.0.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 240399 bytes (234 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 234 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/httpuv_1.6.15.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 1886279 bytes (1.8 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.8 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/crosstalk_1.2.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 297634 bytes (290 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 290 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/bookdown_0.39.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 865376 bytes (845 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 845 KB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/questionr_0.7.8.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 3699219 bytes (3.5 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 3.5 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/DT_0.33.tar.gz'
+"
+"2","Content type 'binary/octet-stream'"
+"2"," length 1666557 bytes (1.6 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.6 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/palmerpenguins_0.1.1.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 3011997 bytes (2.9 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.9 MB
+
+"
+"2","trying URL 'https://p3m.dev/cran/latest/src/contrib/rmdformats_1.0.4.tar.gz'
+"
+"2","Content type 'application/x-tar'"
+"2"," length 2054722 bytes (2.0 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 2.0 MB
+
+"
+"2","* installing *source* package ‘R.methodsS3’ ...
+"
+"2","** package ‘R.methodsS3’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (R.methodsS3)
+"
+"2","* installing *source* package ‘proxy’ ...
+"
+"2","** package ‘proxy’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c apply.c -o apply.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c arrayIndex.c -o arrayIndex.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c distance.c -o distance.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c dll.c -o dll.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c util.c -o util.o
+"
+"1","gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o proxy.so apply.o arrayIndex.o distance.o dll.o util.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-proxy/00new/proxy/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (proxy)
+"
+"2","* installing *source* package ‘haven’ ...
+"
+"2","** package ‘haven’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","Using PKG_CFLAGS=
+Using PKG_LIBS=-lz
+"
+"1","--------------------------- [ANTICONF] --------------------------------
+Configuration failed to find the zlib library. Try installing:
+ * deb: zlib1g-dev (Debian, Ubuntu, etc)
+ * rpm: zlib-devel (Fedora, EPEL)
+ * csw: libz_dev (Solaris)
+ * brew: zlib (OSX)
+If zlib is already installed, check that 'pkg-config' is in your
+PATH and PKG_CONFIG_PATH contains a zlib.pc file. If pkg-config
+is unavailable you can set INCLUDE_DIR and LIB_DIR manually via:
+R CMD INSTALL --configure-vars='INCLUDE_DIR=... LIB_DIR=...'
+-------------------------- [ERROR MESSAGE] ---------------------------
+"
+"1","<stdin>:1:10: fatal error: zlib.h: No such file or directory
+compilation terminated.
+"
+"1","--------------------------------------------------------------------
+"
+"2","ERROR: configuration failed for package ‘haven’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/haven’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘haven’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘httpuv’ ...
+"
+"2","** package ‘httpuv’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"1","./configure: 20: pkg-config: not found
+** Using bundled copy of libuv
+** PKG_CFLAGS=-Ilibuv/include
+** PKG_LIBS=./libuv/.libs/libuv.a
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c RcppExports.cpp -o RcppExports.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c callback.cpp -o callback.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c callbackqueue.cpp -o callbackqueue.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c filedatasource-unix.cpp -o filedatasource-unix.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c filedatasource-win.cpp -o filedatasource-win.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c fs.cpp -o fs.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG -Ilibuv/include -pthread -I'/usr/local/lib/R/site-library/later/include' -I'/usr/local/lib/R/site-library/Rcpp/include' -I/usr/local/include   -fvisibility=hidden -DSTRICT_R_HEADERS -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c gzipdatasource.cpp -o gzipdatasource.o
+"
+"2","In file included from gzipdatasource.cpp:1:
+gzipdatasource.h:4:10: fatal error: zlib.h: No such file or directory
+    4 | #include <zlib.h>
+      |          ^~~~~~~~
+compilation terminated.
+"
+"2","make: *** [/usr/local/lib/R/etc/Makeconf:204: gzipdatasource.o] Error 1
+"
+"2","ERROR: compilation failed for package ‘httpuv’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/httpuv’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘httpuv’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘crosstalk’ ...
+"
+"2","** package ‘crosstalk’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (crosstalk)
+"
+"2","* installing *source* package ‘bookdown’ ...
+"
+"2","** package ‘bookdown’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (bookdown)
+"
+"2","* installing *source* package ‘palmerpenguins’ ...
+"
+"2","** package ‘palmerpenguins’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** data
+"
+"2","*** moving datasets to lazyload DB
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (palmerpenguins)
+"
+"2","* installing *source* package ‘R.oo’ ...
+"
+"2","** package ‘R.oo’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"1","Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function getMethods to getMethods.default, which was defined in environment R.oo.
+Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function getClasses to getClasses.default, which was defined in environment R.oo.
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (R.oo)
+"
+"2","* installing *source* package ‘e1071’ ...
+"
+"2","** package ‘e1071’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using C++ compiler: ‘g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c Rsvm.c -o Rsvm.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cmeans.c -o cmeans.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c cshell.c -o cshell.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c floyd.c -o floyd.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","g++ -std=gnu++17 -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g   -c svm.cpp -o svm.o
+"
+"1","g++ -std=gnu++17 -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o e1071.so Rsvm.o cmeans.o cshell.o floyd.o init.o svm.o -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-e1071/00new/e1071/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (e1071)
+"
+"2","ERROR: dependency ‘httpuv’ is not available for package ‘shiny’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/shiny’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘shiny’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","ERROR: dependency ‘haven’ is not available for package ‘labelled’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/labelled’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘labelled’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","ERROR: dependency ‘httpuv’ is not available for package ‘DT’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/DT’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘DT’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘rmdformats’ ...
+"
+"2","** package ‘rmdformats’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (rmdformats)
+"
+"2","* installing *source* package ‘R.utils’ ...
+"
+"2","** package ‘R.utils’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"1","Warning in setGenericS3.default(name, export = exportGeneric, envir = envir,  :
+  Renamed the preexisting function warnings to warnings.default, which was defined in environment R.utils.
+Warning in setGenericS3.default(""use"") :
+  Renamed the preexisting function use to use.default, which was defined in environment R.utils.
+Warning in setMethodS3.default(""use"", ""default"", function(pkg = ""R.utils"",  :
+  Method already existed and was overwritten: use.default
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (R.utils)
+"
+"2","ERROR: dependency ‘shiny’ is not available for package ‘miniUI’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/miniUI’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘miniUI’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","* installing *source* package ‘classInt’ ...
+"
+"2","** package ‘classInt’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"2","using C compiler: ‘gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"2","using Fortran compiler: ‘GNU Fortran (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0’
+"
+"1","gfortran  -fPIC  -g -O2  -c fish1.f -o fish1.o
+"
+"1","gcc -I""/usr/local/lib/R/include"" -DNDEBUG   -I/usr/local/include    -fPIC  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c init.c -o init.o
+"
+"1","gcc -shared -L/usr/local/lib/R/lib -L/usr/local/lib -o classInt.so fish1.o init.o -lgfortran -lm -L/usr/local/lib/R/lib -lR
+"
+"2","installing to /usr/local/lib/R/site-library/00LOCK-classInt/00new/classInt/libs
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (classInt)
+"
+"2","* installing *source* package ‘R.cache’ ...
+"
+"2","** package ‘R.cache’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (R.cache)
+"
+"2","* installing *source* package ‘styler’ ...
+"
+"2","** package ‘styler’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","*** copying figures
+"
+"2","** building package indices
+"
+"2","** installing vignettes
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (styler)
+"
+"2","ERROR: dependencies ‘shiny’, ‘miniUI’, ‘labelled’ are not available for package ‘questionr’
+"
+"2","* removing ‘/usr/local/lib/R/site-library/questionr’
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","installation of package ‘questionr’ had non-zero exit status"
+"1",""
+"1","
+"
+"2","
+"
+"2",""
+"2","The downloaded source packages are in
+	‘/tmp/RtmpZOWFi2/downloaded_packages’"
+"2",""
+"2","
+"

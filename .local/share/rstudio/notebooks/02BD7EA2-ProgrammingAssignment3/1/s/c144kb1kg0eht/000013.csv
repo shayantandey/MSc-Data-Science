@@ -1,0 +1,5 @@
+"0","outcome[, 11] <- as.numeric(outcome[, 11])"
+"2","Warning:"
+"2"," NAs introduced by coercion
+"
+"0","hist(outcome[, 11])"

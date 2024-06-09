@@ -1,0 +1,512 @@
+# Subset the data for the specified state and outcome
+state_data <- subset(data, State == state)
+outcome_data <- state_data[, c("Hospital.Name", outcome_column[outcome])]
+# Convert the outcome data to numeric and remove rows with NA values
+outcome_data[, 2] <- suppressWarnings(as.numeric(outcome_data[, 2]))
+outcome_data <- na.omit(outcome_data)
+# Order the data by outcome and hospital name (to handle ties)
+outcome_data <- outcome_data[order(outcome_data[, 2], outcome_data[, 1]), ]
+# Determine the ranking
+if (num == "best") {
+rank <- 1
+} else if (num == "worst") {
+rank <- nrow(outcome_data)
+} else if (is.numeric(as.numeric(num)) && as.numeric(num) > 0 && as.numeric(num) <= nrow(outcome_data)) {
+rank <- as.numeric(num)
+} else {
+rank <- NA
+}
+# Get the hospital name with the given rank or NA if the rank is not valid
+hospital <- if (!is.na(rank) && rank <= nrow(outcome_data)) {
+outcome_data[rank, "Hospital.Name"]
+} else {
+NA
+}
+# Append the result to the results data frame
+results <- rbind(results, data.frame(hospital = hospital, state = state))
+}
+return(results)
+}
+# Example usage:
+head(rankall("heart attack", 20), 10)
+tail(rankall("pneumonia", "worst"), 3)
+tail(rankall("heart failure"), 10)
+rankall <- function(outcome, num = "best") {
+# Read the outcome data
+data <- read.csv("ProgrammingAssignment3_Data/outcome-of-care-measures.csv", colClasses = "character")
+# Define valid outcomes and their corresponding column names in the data
+valid_outcomes <- c("heart attack", "heart failure", "pneumonia")
+outcome_column <- c("heart attack" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
+"heart failure" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
+"pneumonia" = "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
+# Check if the provided outcome is valid
+if (!outcome %in% valid_outcomes) {
+stop("invalid outcome")
+}
+# Initialize an empty data frame for the results
+results <- data.frame(hospital = character(), state = character(), stringsAsFactors = FALSE)
+# Get the list of states
+states <- unique(data$State)
+# Loop over each state to find the hospital of the given rank
+for (state in states) {
+# Subset the data for the specified state and outcome
+state_data <- subset(data, State == state)
+outcome_data <- state_data[, c("Hospital.Name", outcome_column[outcome])]
+# Convert the outcome data to numeric and remove rows with NA values
+outcome_data[, 2] <- suppressWarnings(as.numeric(outcome_data[, 2]))
+outcome_data <- na.omit(outcome_data)
+# Order the data by outcome and hospital name (to handle ties)
+outcome_data <- outcome_data[order(outcome_data[, 2], outcome_data[, 1]), ]
+# Determine the ranking
+if (num == "best") {
+rank <- 1
+} else if (num == "worst") {
+rank <- nrow(outcome_data)
+} else if (is.numeric(as.numeric(num)) && as.numeric(num) > 0 && as.numeric(num) <= nrow(outcome_data)) {
+rank <- as.numeric(num)
+} else {
+rank <- NA
+}
+# Get the hospital name with the given rank or NA if the rank is not valid
+hospital <- if (!is.na(rank) && rank <= nrow(outcome_data)) {
+outcome_data[rank, "Hospital.Name"]
+} else {
+NA
+}
+# Append the result to the results data frame
+results <- rbind(results, data.frame(hospital = hospital, state = state))
+}
+return(results)
+}
+# Example usage:
+head(rankall("heart attack", 20), 10)
+tail(rankall("pneumonia", "worst"), 3)
+tail(rankall("heart failure"), 10)
+# Example usage:
+head(rankall("heart attack", 20), 10)
+rankall("heart attack")
+rankall("heart attack", 20)
+head(rankall("heart attack", 20), 10)
+# Example usage:
+head(rankall("heart attack", 20), 10)
+rankall <- function(outcome, num = "best") {
+# Read the outcome data
+data <- read.csv("ProgrammingAssignment3_Data/outcome-of-care-measures.csv", colClasses = "character")
+# Define valid outcomes and their corresponding column names in the data
+valid_outcomes <- c("heart attack", "heart failure", "pneumonia")
+outcome_column <- c("heart attack" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
+"heart failure" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
+"pneumonia" = "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
+# Check if the provided outcome is valid
+if (!outcome %in% valid_outcomes) {
+stop("invalid outcome")
+}
+# Initialize an empty data frame for the results
+results <- data.frame(hospital = character(), state = character(), stringsAsFactors = FALSE)
+# Get the list of states
+states <- unique(data$State)
+# Loop over each state to find the hospital of the given rank
+for (state in states) {
+# Subset the data for the specified state and outcome
+state_data <- subset(data, State == state)
+outcome_data <- state_data[, c("Hospital.Name", outcome_column[outcome])]
+# Convert the outcome data to numeric and remove rows with NA values
+outcome_data[, 2] <- suppressWarnings(as.numeric(outcome_data[, 2]))
+outcome_data <- na.omit(outcome_data)
+# Order the data by outcome and hospital name (to handle ties)
+outcome_data <- outcome_data[order(outcome_data[, 2], outcome_data[, 1]), ]
+# Determine the ranking
+if (num == "best") {
+rank <- 1
+} else if (num == "worst") {
+rank <- nrow(outcome_data)
+} else if (is.numeric(as.numeric(num)) && as.numeric(num) > 0 && as.numeric(num) <= nrow(outcome_data)) {
+rank <- as.numeric(num)
+} else {
+rank <- NA
+}
+# Get the hospital name with the given rank or NA if the rank is not valid
+hospital <- if (!is.na(rank) && rank <= nrow(outcome_data)) {
+outcome_data[rank, "Hospital.Name"]
+} else {
+NA
+}
+# Append the result to the results data frame
+results <- rbind(results, data.frame(hospital = hospital, state = state))
+}
+return(results)
+}
+# Example usage:
+head(rankall("heart attack", 20), 10)
+head(rankall("heart attack", 20), 10)
+tail(rankall("pneumonia", "worst"), 3)
+tail(rankall("heart failure"), 10)
+outcome <- read.csv("ProgrammingAssignment3_Data/outcome-of-care-measures.csv", colClasses = "character")
+head(outcome)
+outcome[, 11] <- as.numeric(outcome[, 11])
+hist(outcome[, 11])
+## You may get a warning about NAs being introduced; that is okay
+best <- function(state, outcome) {
+# Read the outcome data
+data <- read.csv("ProgrammingAssignment3_Data/outcome-of-care-measures.csv", colClasses = "character")
+# Define valid outcomes and their corresponding column names in the data
+valid_outcomes <- c("heart attack", "heart failure", "pneumonia")
+outcome_column <- c("heart attack" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
+"heart failure" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
+"pneumonia" = "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
+# Check if the provided outcome is valid
+if (!outcome %in% valid_outcomes) {
+stop("invalid outcome")
+}
+# Check if the provided state is valid
+if (!state %in% unique(data$State)) {
+stop("invalid state")
+}
+# Subset the data for the specified state and outcome
+state_data <- subset(data, State == state)
+outcome_data <- state_data[, c("Hospital.Name", outcome_column[outcome])]
+# Convert the outcome data to numeric and remove rows with NA values
+outcome_data[, 2] <- as.numeric(outcome_data[, 2])
+outcome_data <- na.omit(outcome_data)
+# Find the hospital with the lowest 30-day mortality rate
+min_value <- min(outcome_data[, 2])
+best_hospitals <- outcome_data[outcome_data[, 2] == min_value, "Hospital.Name"]
+# Return the hospital name, sorted alphabetically in case of ties
+best_hospital <- sort(best_hospitals)[1]
+return(best_hospital)
+}
+# Example usage:
+best("TX", "heart attack")
+best("TX", "heart failure")
+best("MD", "heart attack")
+best("MD", "pneumonia")
+best("BB", "heart attack")
+tinytex::install_tinytex()
+outcome <- read.csv("ProgrammingAssignment3_Data/outcome-of-care-measures.csv", colClasses = "character")
+head(outcome)
+outcome[, 11] <- as.numeric(outcome[, 11])
+hist(outcome[, 11])
+## You may get a warning about NAs being introduced; that is okay
+best <- function(state, outcome) {
+# Read the outcome data
+data <- read.csv("ProgrammingAssignment3_Data/outcome-of-care-measures.csv", colClasses = "character")
+# Define valid outcomes and their corresponding column names in the data
+valid_outcomes <- c("heart attack", "heart failure", "pneumonia")
+outcome_column <- c("heart attack" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
+"heart failure" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
+"pneumonia" = "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
+# Check if the provided outcome is valid
+if (!outcome %in% valid_outcomes) {
+stop("invalid outcome")
+}
+# Check if the provided state is valid
+if (!state %in% unique(data$State)) {
+stop("invalid state")
+}
+# Subset the data for the specified state and outcome
+state_data <- subset(data, State == state)
+outcome_data <- state_data[, c("Hospital.Name", outcome_column[outcome])]
+# Convert the outcome data to numeric and remove rows with NA values
+outcome_data[, 2] <- as.numeric(outcome_data[, 2])
+outcome_data <- na.omit(outcome_data)
+# Find the hospital with the lowest 30-day mortality rate
+min_value <- min(outcome_data[, 2])
+best_hospitals <- outcome_data[outcome_data[, 2] == min_value, "Hospital.Name"]
+# Return the hospital name, sorted alphabetically in case of ties
+best_hospital <- sort(best_hospitals)[1]
+return(best_hospital)
+}
+# Example usage:
+best("TX", "heart attack")
+best("TX", "heart failure")
+best("MD", "heart attack")
+best("MD", "pneumonia")
+rankhospital <- function(state, outcome, num = "best") {
+# Read the outcome data
+data <- read.csv("ProgrammingAssignment3_Data/outcome-of-care-measures.csv", colClasses = "character")
+# Define valid outcomes and their corresponding column names in the data
+valid_outcomes <- c("heart attack", "heart failure", "pneumonia")
+outcome_column <- c("heart attack" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
+"heart failure" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
+"pneumonia" = "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
+# Check if the provided outcome is valid
+if (!outcome %in% valid_outcomes) {
+stop("invalid outcome")
+}
+# Check if the provided state is valid
+if (!state %in% unique(data$State)) {
+stop("invalid state")
+}
+# Subset the data for the specified state and outcome
+state_data <- subset(data, State == state)
+outcome_data <- state_data[, c("Hospital.Name", outcome_column[outcome])]
+# Convert the outcome data to numeric and remove rows with NA values
+outcome_data[, 2] <- as.numeric(outcome_data[, 2])
+outcome_data <- na.omit(outcome_data)
+# Order the data by outcome and hospital name (to handle ties)
+outcome_data <- outcome_data[order(outcome_data[, 2], outcome_data[, 1]), ]
+# Determine the ranking
+if (num == "best") {
+rank <- 1
+} else if (num == "worst") {
+rank <- nrow(outcome_data)
+} else if (is.numeric(num) && num > 0 && num <= nrow(outcome_data)) {
+rank <- num
+} else {
+return(NA)
+}
+# Return the hospital name with the given rank
+return(outcome_data[rank, "Hospital.Name"])
+}
+# Example usage:
+rankhospital("TX", "heart failure", 4)
+rankhospital("MD", "heart attack", "worst")
+rankhospital("MN", "heart attack", 5000)
+rankall <- function(outcome, num = "best") {
+# Read the outcome data
+data <- read.csv("ProgrammingAssignment3_Data/outcome-of-care-measures.csv", colClasses = "character")
+# Define valid outcomes and their corresponding column names in the data
+valid_outcomes <- c("heart attack", "heart failure", "pneumonia")
+outcome_column <- c("heart attack" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
+"heart failure" = "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
+"pneumonia" = "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
+# Check if the provided outcome is valid
+if (!outcome %in% valid_outcomes) {
+stop("invalid outcome")
+}
+# Initialize an empty data frame for the results
+results <- data.frame(hospital = character(), state = character(), stringsAsFactors = FALSE)
+# Get the list of states
+states <- unique(data$State)
+# Loop over each state to find the hospital of the given rank
+for (state in states) {
+# Subset the data for the specified state and outcome
+state_data <- subset(data, State == state)
+outcome_data <- state_data[, c("Hospital.Name", outcome_column[outcome])]
+# Convert the outcome data to numeric and remove rows with NA values
+outcome_data[, 2] <- suppressWarnings(as.numeric(outcome_data[, 2]))
+outcome_data <- na.omit(outcome_data)
+# Order the data by outcome and hospital name (to handle ties)
+outcome_data <- outcome_data[order(outcome_data[, 2], outcome_data[, 1]), ]
+# Determine the ranking
+if (num == "best") {
+rank <- 1
+} else if (num == "worst") {
+rank <- nrow(outcome_data)
+} else if (is.numeric(as.numeric(num)) && as.numeric(num) > 0 && as.numeric(num) <= nrow(outcome_data)) {
+rank <- as.numeric(num)
+} else {
+rank <- NA
+}
+# Get the hospital name with the given rank or NA if the rank is not valid
+hospital <- if (!is.na(rank) && rank <= nrow(outcome_data)) {
+outcome_data[rank, "Hospital.Name"]
+} else {
+NA
+}
+# Append the result to the results data frame
+results <- rbind(results, data.frame(hospital = hospital, state = state))
+}
+return(results)
+}
+# Example usage:
+head(rankall("heart attack", 20), 10)
+head(rankall("heart attack", 20), 10)
+tail(rankall("pneumonia", "worst"), 3)
+tail(rankall("heart failure"), 10)
+best("SC", "heart attack")
+best("NY", "pneumonia")
+best("AK", "pneumonia")
+rankhospital("NC", "heart attack", "worst")
+rankhospital("WA", "heart attack", 7)
+rankhospital("TX", "pneumonia", 10)
+rankhospital("NY", "heart attack", 7)
+r <- rankall("heart attack", 4)
+as.character(subset(r, state == "HI")$hospital)
+r <- rankall("pneumonia", "worst")
+as.character(subset(r, state == "NJ")$hospital)
+r <- rankall("heart failure", 10)
+as.character(subset(r, state == "NV")$hospital)
+knitr::opts_chunk$set(echo = TRUE)
+if(!is.element('dplyr', installed.packages()[,1])){install.packages('dplyr',dependencies = T)}
+if(!is.element('gt', installed.packages()[,1])){install.packages('gt',dependencies = T)}
+if(!is.element('gtsummary', installed.packages()[,1])){install.packages('gt',dependencies = T)}
+if(!is.element('forcats', installed.packages()[,1])){install.packages('forcats',dependencies = T)}
+if(!is.element('ggplot2', installed.packages()[,1])){install.packages('ggplot2',dependencies = T)}
+if(!is.element('rmdformats', installed.packages()[,1])){install.packages('rmdformats',dependencies = T)}
+library(gt)
+library(swirl)
+install_from_swirl("Getting and Cleaning Data")
+swirl()
+swirl()
+?read.csv
+path2csv
+mydf <- read.csv(path2csv, stringsAsFactors = FALSE)
+dim(mydf)
+head(mydf)
+library(dplyr)
+packageVersion("dplyr")
+cran <- tbl_df(mydf)
+rm("mydf")
+cran
+?select
+select(cran, ip_id, package, country)
+5:20
+select(cran, r_arch:country)
+select(cran, country:r_arch)
+cran
+select(cran, -time)
+-5:20
+-(5:20)
+select(-(X:size))
+d
+select(X:size)
+cran
+select(cran, -(X:size))
+filter(cran, package == "swirl")
+# Define the URL for the data file
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
+# Define the destination file path
+destfile <- "ss06hid.csv"
+# Download the file
+download.file(url, destfile)
+# Load the data into R
+housing_data <- read.csv(destfile)
+# Count the number of properties worth $1,000,000 or more
+properties_worth_million_or_more <- sum(housing_data$VAL == 24, na.rm = TRUE)
+# Print the result
+properties_worth_million_or_more
+# Install and load the readxl package if not already installed
+if (!require(readxl)) {
+install.packages("readxl")
+library(readxl)
+}
+# Define the URL for the Excel file
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2FDATA.gov_NGAP.xlsx"
+# Define the destination file path
+destfile <- "DATA.gov_NGAP.xlsx"
+# Download the file
+download.file(url, destfile, mode = "wb")
+# Read rows 18-23 and columns 7-15 into R and assign the result to a variable called dat
+dat <- read_excel(destfile, range = "G18:O23")
+# Display the data
+print(dat)
+dat
+exit()
+quit()
+sum(dat$Zip*dat$Ext,na.rm=T)
+# Install and load the xml2 package if not already installed
+if (!require(xml2)) {
+install.packages("xml2")
+library(xml2)
+}
+# Install and load the data.table package if not already installed
+if (!require(data.table)) {
+install.packages("data.table")
+library(data.table)
+}
+# Define the URL for the CSV file
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06pid.csv"
+# Define the destination file path
+destfile <- "ss06pid.csv"
+# Download the file
+download.file(url, destfile, mode = "wb")
+# Load the data into an R object using fread
+DT <- fread(destfile)
+# Display the first few rows of the data table to confirm it loaded correctly
+print(head(DT))
+# Display the first few rows of the data table to confirm it loaded correctly
+print(head(DT))
+# Define the URL for the data file
+url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
+# Define the destination file path
+destfile <- "ss06hid.csv"
+# Download the file
+download.file(url, destfile)
+# Load the data into R
+housing_data <- read.csv(destfile)
+# Count the number of properties worth $1,000,000 or more
+properties_worth_million_or_more <- sum(housing_data$VAL == 24, na.rm = TRUE)
+# Print the result
+properties_worth_million_or_more
+install.packages("RMySQL")
+#Now create a dataframe in R with these data:
+fertil <- c(rep("fertil1",1), rep("fertil2",1), rep("fertil3",1), rep("fertil4",1), rep("fertil5",1))
+treat <- c(rep("treatA",5), rep("treatB",5), rep("treatC",5), rep("treatD",5), rep("treatE",5))
+seed <- c("A","E","C","B","D", "C","B","A","D","E", "B","C","D","E","A", "D","A","E","C","B", "E","D","B","A","C")
+freq <- c(42,45,41,56,47, 47,54,46,52,49, 55,52,57,49,45, 51,44,47,50,54, 44,50,48,43,46)
+mydata <- data.frame(treat, fertil, seed, freq)
+mydata
+mydata
+#We can re-create the original table, using the matrix function:
+matrix(mydata$seed, 5,5)
+matrix(mydata$freq, 5,5)
+#The ANOVA table
+myfit <- lm(freq ~ fertil+treat+seed, mydata)
+anova(myfit)
+library(agricolae)
+LSD.test(y = myfit,
+trt = "seed",
+DFerror = myfit$df.residual,
+MSerror = deviance(myfit)/myfit$df.residual,
+alpha = 0.05,
+group = TRUE,
+console = TRUE)
+setwd("~/Semester 1/R")
+library(tidyverse)
+library(tidyverse)
+setwd("~/Semester 1/R")
+library(tidyverse)
+setwd("~/Semester 1/R")
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+install.packages('TIDYVERSE')
+Y
+install.packages('tidyverse')
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+library(tidyverse)
+autompg = read.table(
+"http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data",
+quote = "\"",
+comment.char = "",
+stringsAsFactors = FALSE)
+head(autompg,20)
+autompg = read.table(
+"http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data",
+quote = "\"",
+comment.char = "",
+stringsAsFactors = FALSE)
+head(autompg,20)
+str()
+install.packages(c("DBI", "highr", "knitr", "markdown", "rlang"))
+install.packages("tidyverse")
+library(tidyverse)
+install.packages("tidyverse")
+install.packages("systemfonts", dependencies = TRUE)
+detach("package:base", unload = TRUE)
+library(base, lib.loc = "/usr/local/lib/R/library")
+install.packages("tidyverse")
+install.packages("haven")
+install.packages("haven", dependencies = TRUE)
+install.packages("tidyverse")
+install.packages("tidyverse")
+library(tidyverse)

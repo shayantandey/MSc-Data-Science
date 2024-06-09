@@ -1,0 +1,2 @@
+"0","outcome <- read.csv(""ProgrammingAssignment3_Data/outcome-of-care-measures.csv"", colClasses = ""character"")"
+"0","head(outcome)"

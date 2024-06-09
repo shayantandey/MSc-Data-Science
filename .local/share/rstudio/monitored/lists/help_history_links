@@ -1,0 +1,8 @@
+help/library/base/html/sample.html,R: Random Samples and Permutations
+help/library/stats/html/Binomial.html,R: The Binomial Distribution
+help/library/stats/html/Normal.html,R: The Normal Distribution
+help/library/datasets/html/cars.html,R: Speed and Stopping Distances of Cars
+help/library/NULL/help/plot,R: help
+help/library/graphics/html/boxplot.html,R: Box Plots
+help/library/utils/html/read.table.html,R: Data Input
+help/library/dplyr/html/select.html,R: Keep or drop columns using their names and types

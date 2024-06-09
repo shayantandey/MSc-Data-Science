@@ -1,0 +1,11 @@
+name pdftex.aarch64-linux
+category TLCore
+revision 70772
+shortdesc aarch64-linux files of pdftex
+containersize 836484
+containerchecksum 8e7b2116203e2f72dca49225ca8a226f1d0e15a6293d88fa97ac31608927dc6446659705ec6cccd453ec8b2c553dd63b26088836900f03e34c31899a06790a7b
+binfiles arch=aarch64-linux size=664
+ bin/aarch64-linux/etex
+ bin/aarch64-linux/pdfetex
+ bin/aarch64-linux/pdftex
+ bin/aarch64-linux/simpdftex

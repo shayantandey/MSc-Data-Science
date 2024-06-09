@@ -1,0 +1,67 @@
+---
+title: "Basic Data Summaries in R Markdown"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+## First steps
+Install packages you will need, unless you already have them
+```{r, include=F}
+if(!is.element('dplyr', installed.packages()[,1])){install.packages('dplyr',dependencies = T)}
+if(!is.element('gt', installed.packages()[,1])){install.packages('gt',dependencies = T)}
+if(!is.element('gtsummary', installed.packages()[,1])){install.packages('gt',dependencies = T)}
+if(!is.element('forcats', installed.packages()[,1])){install.packages('forcats',dependencies = T)}
+if(!is.element('ggplot2', installed.packages()[,1])){install.packages('ggplot2',dependencies = T)}
+if(!is.element('rmdformats', installed.packages()[,1])){install.packages('rmdformats',dependencies = T)}
+```
+
+Load the packages to make the functions available
+```{r, include=F}
+library(gt)
+library(gtsummary)
+library(dplyr)
+library(forcats)
+library(ggplot2)
+```
+
+Load a data set from CSV file
+```{r, include=F}
+df<-read.csv("data.csv",stringsAsFactors = T,na.strings="")
+```
+
+
+# Data Summary
+
+Select the variables you are interested in, removing things like the UUID
+Then make a summary table using `tbl_summary` command from gtsummary package
+```{r echo=T, message=F}
+df<-select(df, gender,age,people_in_home,education)
+tbl_summary(df,missing = "always")
+```
+\newpage
+
+# Or split the same data by a variable
+In this example I used gender as the basis of the split. 
+Use `fct_explicit_na` command from forcats package to make NAs explicit factor of the grouping variable
+```{r echo=T, message=F}
+df$gender<-fct_explicit_na(df$gender)
+tbl_summary(df,by = "gender",missing = "always")
+```
+
+\newpage
+
+# Draw a chart using ggplot2
+```{r,echo=T,message=F}
+ggplot(data = df,aes(x=education))+geom_bar()
+```
+

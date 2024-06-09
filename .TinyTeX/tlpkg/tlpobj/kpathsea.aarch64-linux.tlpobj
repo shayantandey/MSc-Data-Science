@@ -1,0 +1,11 @@
+name kpathsea.aarch64-linux
+category TLCore
+revision 70276
+shortdesc aarch64-linux files of kpathsea
+containersize 38780
+containerchecksum 58e145fb9e73ec1cd4744b9e6af9baf8c5da42f02f869ed68ddbd6f5557a0301ffd8220c8dc6400cba75d0417706115a92733478ddd836b472b89177c2473e10
+binfiles arch=aarch64-linux size=33
+ bin/aarch64-linux/kpseaccess
+ bin/aarch64-linux/kpsereadlink
+ bin/aarch64-linux/kpsestat
+ bin/aarch64-linux/kpsewhich

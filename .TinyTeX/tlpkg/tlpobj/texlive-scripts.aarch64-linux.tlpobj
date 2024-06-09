@@ -1,0 +1,20 @@
+name texlive-scripts.aarch64-linux
+category TLCore
+revision 64356
+shortdesc aarch64-linux files of texlive-scripts
+containersize 596
+containerchecksum 89c7839762c6cd8b80a7bbe6a967eddfa943d2b948f84eae21cdcbab5f36b2bd8286405bdd62b8b0a92b29daa029bfc593138ec5a81c4802cf02391362c5203a
+binfiles arch=aarch64-linux size=13
+ bin/aarch64-linux/fmtutil
+ bin/aarch64-linux/fmtutil-sys
+ bin/aarch64-linux/fmtutil-user
+ bin/aarch64-linux/man
+ bin/aarch64-linux/mktexfmt
+ bin/aarch64-linux/mktexmf
+ bin/aarch64-linux/mktexpk
+ bin/aarch64-linux/mktextfm
+ bin/aarch64-linux/rungs
+ bin/aarch64-linux/texhash
+ bin/aarch64-linux/updmap
+ bin/aarch64-linux/updmap-sys
+ bin/aarch64-linux/updmap-user

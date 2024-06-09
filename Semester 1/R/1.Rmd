@@ -1,0 +1,87 @@
+---
+title: "Assignment-1"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+**Execute the following cell to load the tidyverse library:**
+
+```{r}
+library(tidyverse)
+```
+
+**Execute the following cell to load the data. Refer to this website <http://archive.ics.uci.edu/ml/datasets/Auto+MPG> for details on the dataset:**
+
+```{r}
+autompg = read.table(
+  "http://archive.ics.uci.edu/ml/machine-learning-databases/auto-mpg/auto-mpg.data",
+  quote = "\"",
+  comment.char = "",
+  stringsAsFactors = FALSE)
+head(autompg,20)
+```
+
+**Question 1.1**: print the structure of the unedited data set. How many samples and features are there?
+
+```{r}
+str()
+```
+
+**Execute the following cell to assign names to the columns of the dataframe:**
+
+```{r}
+colnames(autompg) = c("mpg", "cyl", "disp", "hp", "wt", "acc", "year", "origin", "name")
+```
+
+**Question 1.2**: complete the code segment below to remove samples with missing horsepower (hp) values represented as a "?" in the dataset.
+
+```{r}
+autompg = autompg %>% filter()
+```
+
+**Question 1.3**: complete the code segment below to remove samples with the name "plymouth reliant"
+
+```{r}
+autompg = autompg %>% 
+```
+
+**Question 2.1**: complete the code segment below to select all features except 'name'
+
+```{r}
+autompg = autompg %>% select()
+```
+
+**Execute the following cell to change the type of hp values from character to numeric:**
+
+```{r}
+autompg$hp = as.numeric(autompg$hp)
+```
+
+**Question 2.2**: complete the code cell to modify 'origin' column to reflect local (1) and international models (0)
+
+```{r}
+autompg = autompg %>% mutate(origin = ifelse())
+head(autompg, 20)
+```
+
+**Question 2.3**: print the structure of the dataframe. What types are the columns 'cyl' and 'origin'?
+
+```{r}
+str()
+```
+
+**Question 3.1**: complete the code segment below to change the types of 'cyl' and 'origin' columns to factor
+
+```{r}
+catcols = c()
+autompg[catcols] = 
+```
+
+**Question 3.2**: complete the code segment below to create a scatter plot of mpg vs. displacement by color coding the points according to the origin (local or international). Add axes labels and title for the plot. Comment on what you observe:
+
+```{r}
+p = ggplot(data = , aes(x = , y = , color = )) + 
+  
+p
+```

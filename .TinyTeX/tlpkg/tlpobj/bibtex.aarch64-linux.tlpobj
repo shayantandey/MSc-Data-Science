@@ -1,0 +1,8 @@
+name bibtex.aarch64-linux
+category Package
+revision 70276
+shortdesc aarch64-linux files of bibtex
+containersize 76356
+containerchecksum 67d3d4adf95e53dd02c449cbce5b84e9eded33c7dca33f2fed3f1e43d6ec47d56b7529c511c5801bce69d9005e6df685174273e2ef5cc1bc01c7ff99c2d52829
+binfiles arch=aarch64-linux size=51
+ bin/aarch64-linux/bibtex
