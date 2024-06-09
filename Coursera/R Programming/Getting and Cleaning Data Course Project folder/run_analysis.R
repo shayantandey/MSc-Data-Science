@@ -1,34 +1,30 @@
 # Load required library
 library(dplyr)
 
-# Download the dataset
-if(!file.exists("./getcleandata")) {
-  dir.create("./getcleandata")
-}
 fileurl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileurl, destfile = "./getcleandata/projectdataset.zip")
+download.file(fileurl, destfile = "projectdataset.zip")
 
 # Unzip the dataset
-unzip(zipfile = "./getcleandata/projectdataset.zip", exdir = "./getcleandata")
+unzip(zipfile = "projectdataset.zip", exdir = "./projectdataset")
 
 # 1. Merge the training and test datasets
 # 1.1 Reading files
 
 # Reading training datasets
-x_train <- read.table("./getcleandata/UCI HAR Dataset/train/X_train.txt")
-y_train <- read.table("./getcleandata/UCI HAR Dataset/train/y_train.txt")
-subject_train <- read.table("./getcleandata/UCI HAR Dataset/train/subject_train.txt")
+x_train <- read.table("./projectdataset/UCI HAR Dataset/train/X_train.txt")
+y_train <- read.table("./projectdataset/UCI HAR Dataset/train/y_train.txt")
+subject_train <- read.table("./projectdataset/UCI HAR Dataset/train/subject_train.txt")
 
 # Reading test datasets
-x_test <- read.table("./getcleandata/UCI HAR Dataset/test/X_test.txt")
-y_test <- read.table("./getcleandata/UCI HAR Dataset/test/y_test.txt")
-subject_test <- read.table("./getcleandata/UCI HAR Dataset/test/subject_test.txt")
+x_test <- read.table("./projectdataset/UCI HAR Dataset/test/X_test.txt")
+y_test <- read.table("./projectdataset/UCI HAR Dataset/test/y_test.txt")
+subject_test <- read.table("./projectdataset/UCI HAR Dataset/test/subject_test.txt")
 
 # Reading feature vector
-features <- read.table("./getcleandata/UCI HAR Dataset/features.txt")
+features <- read.table("./projectdataset/UCI HAR Dataset/features.txt")
 
 # Reading activity labels
-activityLabels <- read.table("./getcleandata/UCI HAR Dataset/activity_labels.txt")
+activityLabels <- read.table("./projectdataset/UCI HAR Dataset/activity_labels.txt")
 colnames(activityLabels) <- c("activityID", "activityType")
 
 # 1.2 Assigning variable names
@@ -66,7 +62,4 @@ tidySet <- setWithActivityNames %>%
   summarise_all(mean)
 
 # Writing second tidy data set into a txt file
-write.table(tidySet, "tidySet.txt", row.names = FALSE)
-
-
-#original work by github.com/divyam6969
+write.table(tidySet, "tidyDataSet.txt", row.names = FALSE)
