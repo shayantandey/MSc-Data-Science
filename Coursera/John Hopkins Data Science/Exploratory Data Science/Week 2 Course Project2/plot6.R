@@ -22,7 +22,7 @@ vehiclesLANEI[, city := c("Los Angeles")]
 # Combine data.tables into one data.table
 bothNEI <- rbind(vehiclesBaltimoreNEI,vehiclesLANEI)
 
-png("plot6.png")
+png(filename="plot6.png")
 
 ggplot(bothNEI, aes(x=factor(year), y=Emissions, fill=city)) +
   geom_bar(aes(fill=year),stat="identity") +
