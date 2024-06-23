@@ -4,7 +4,7 @@ Unzipping and Loading Files
 ----------
 ```R
 library("data.table")
-path <- getwd()
+
 download.file(url = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
               , destfile = paste(path, "dataFiles.zip", sep = "/"))
 unzip(zipfile = "dataFiles.zip")
@@ -34,9 +34,9 @@ barplot(totalNEI[, Emissions]
 dev.off()
 ```
 
-<img src="https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project2/plot1.png" alt="Exploratory Data Analysis Project 2 question 1" >
+<img src="https://github.com/shayantandey/MSc-Data-Science/blob/main/Coursera/John%20Hopkins%20Data%20Science/Exploratory%20Data%20Science/Week%202%20Course%20Project2/plot1.png" alt="Exploratory Data Analysis Project 2 question 1" >
 
-Question 2 ([plot2.R](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project2/plot2.R))
+Question 2 ([plot2.R](https://github.com/shayantandey/MSc-Data-Science/blob/main/Coursera/John%20Hopkins%20Data%20Science/Exploratory%20Data%20Science/Week%202%20Course%20Project2/plot1.R))
 ----------
 Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (𝚏𝚒𝚙𝚜 == "𝟸𝟺𝟻𝟷𝟶") from 1999 to 2008? Use the base plotting system to make a plot answering this question.
 
